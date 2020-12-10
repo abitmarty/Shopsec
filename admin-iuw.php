@@ -13,7 +13,7 @@ if( isset( $config['allowed_ip_admin_panel'] ) && $config['allowed_ip_admin_pane
 }
 elseif( !empty( $p ) && ( $config['login'] == 'admin' || $config['pass'] == 'admin' ) && !preg_match( '/login|dasbhoard|logout|tools-config/', $p ) && $_SERVER['SERVER_ADDR'] != '127.0.0.1' && !strstr( $_SERVER['HTTP_HOST'], 'localhost' )  ){
   header( 'Location: '.$_SERVER['PHP_SELF'].'?p=tools-config&sOption=login-pass' );
-  exit;  
+  exit;
 }
 
 session_start( );
