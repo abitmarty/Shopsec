@@ -11,11 +11,11 @@ class FlatFilesSerialize extends FileJobs
   private $aData = null;
   private static $oInstance = null;
 
-  public static function getInstance( ){  
-    if( !isset( self::$oInstance ) ){  
-      self::$oInstance = new FlatFilesSerialize( );  
-    }  
-    return self::$oInstance;  
+  public static function getInstance( ){
+    if( !isset( self::$oInstance ) ){
+      self::$oInstance = new FlatFilesSerialize( );
+    }
+    return self::$oInstance;
   } // end function getInstance
 
   /**
@@ -155,7 +155,7 @@ class FlatFilesSerialize extends FileJobs
         $sSelected = ( isset( $sIndexValue ) && $aValue[$sKey] == $sKeyVerify ) ? ' selected="selected"' : null;
         $sOption .= '<option value="'.$aValue[$sIndexValue].'"'.$sSelected.'>'.$sName.'</option>';
       } // end foreach
-      
+
       return $sOption;
     }
   } // end function throwDataSelect
