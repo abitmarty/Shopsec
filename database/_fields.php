@@ -24,5 +24,5 @@ $aOrdersExtFields = Array( 'iOrder', 'iShipping', 'iPayment', 'mShipping', 'fShi
 $aOrdersProductsFields = Array( 'iElement', 'iOrder', 'iProduct', 'iQuantity', 'fPrice', 'sName' );
 
 // database/orders_temp.php fields
-$aOrdersTempFields = Array( 'iQuantity', 'fPrice', 'sName' );
+$aOrdersTempFields = Array( 'iQuantity', 'fPrice', 'sName' ); 
 ?>
