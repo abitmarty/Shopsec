@@ -20,6 +20,7 @@ Step 4:
 
   Download the Databasefiles.zip (https://webspace.science.uu.nl/~1235002/databasefiles/)
 	Unzip the zipfile (Databasefiles)
+	
 	Open the database folder in the unzipped Databasefiles folder
 	Now copy the php files from the databse folder to the shopsec database folder (replacing the old database php files)
 
