@@ -1,5 +1,6 @@
 Step 1:
 	Open github desktop
+	
 	Add -> Clone repository -> shopsec
 	Location: C:\xampp\htdocs\Shopsec (C:\mamp\htdocs\Shopsec if your using mamp)
 	Click clone
