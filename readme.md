@@ -12,7 +12,6 @@ Step 3:
 	Go to C:\xampp\htdocs\Shopsec (C:\mamp\htdocs\Shopsec if your using mamp)
 	Open the database folder
 	Delete the php files in the database folder (not the folders)
-
 	Unzip the zipfile I send you (Databasefiles)
 	Open the database folder
 	Now copy the files from the databse folder to the shopsec database folder (replacing the old database files)
