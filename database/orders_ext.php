@@ -87,3 +87,4 @@ a:8:{s:6:"iOrder";i:98;s:9:"iShipping";i:4;s:8:"iPayment";i:2;s:9:"mShipping";s:
 a:7:{s:6:"iOrder";i:99;s:9:"iShipping";i:5;s:8:"iPayment";i:2;s:9:"mShipping";s:3:"UPS";s:14:"fShippingPrice";s:5:"24.00";s:8:"mPayment";s:8:"Transfer";s:3:"sIp";s:14:"131.211.80.228";}
 a:8:{s:6:"iOrder";i:100;s:9:"iShipping";i:4;s:8:"iPayment";i:3;s:9:"mShipping";s:5:"FedEx";s:14:"fShippingPrice";s:5:"19.00";s:8:"mPayment";s:15:"On-line payment";s:3:"sIp";s:15:"131.211.124.216";s:8:"sComment";s:7:"testing";}
 a:7:{s:6:"iOrder";i:1;s:9:"iShipping";i:6;s:8:"iPayment";i:8;s:9:"mShipping";s:15:"UPS (1 werkdag)";s:14:"fShippingPrice";s:5:"13.00";s:8:"mPayment";s:6:"Paypal";s:3:"sIp";s:14:"131.211.80.228";}
+a:8:{s:6:"iOrder";i:2;s:9:"iShipping";i:6;s:8:"iPayment";i:3;s:9:"mShipping";s:15:"UPS (1 werkdag)";s:14:"fShippingPrice";s:5:"13.00";s:8:"mPayment";s:4:"Visa";s:13:"mPaymentPrice";s:2:"3%";s:3:"sIp";s:9:"127.0.0.1";}

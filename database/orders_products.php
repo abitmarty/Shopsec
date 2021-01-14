@@ -134,3 +134,4 @@ a:6:{s:8:"iElement";i:149;s:6:"iOrder";i:99;s:8:"iProduct";i:27;s:9:"iQuantity";
 a:6:{s:8:"iElement";i:150;s:6:"iOrder";i:100;s:8:"iProduct";i:27;s:9:"iQuantity";i:2;s:6:"fPrice";s:5:"14.00";s:5:"sName";s:4:"Beun";}
 a:6:{s:8:"iElement";i:151;s:6:"iOrder";i:1;s:8:"iProduct";i:23;s:9:"iQuantity";i:1;s:6:"fPrice";s:5:"99.00";s:5:"sName";s:19:"Koningsbergergebouw";}
 a:6:{s:8:"iElement";i:152;s:6:"iOrder";i:1;s:8:"iProduct";i:27;s:9:"iQuantity";i:1;s:6:"fPrice";s:5:"14.00";s:5:"sName";s:4:"Beun";}
+a:6:{s:8:"iElement";i:153;s:6:"iOrder";i:2;s:8:"iProduct";i:19;s:9:"iQuantity";i:1;s:6:"fPrice";s:5:"14.00";s:5:"sName";s:8:"Nimwegen";}
