@@ -14,6 +14,7 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
   <link rel="stylesheet" href="<?php echo $config['dir_skin'].$config['style']; ?>" />
   <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
   <link rel="stylesheet" href="templates/default/footer.css"/>
+  <link rel="stylesheet" href="templates/default/header.css"/>
 
   <script type="text/javascript" src="<?php echo $config['dir_core']; ?>common.js"></script>
   <script type="text/javascript" src="<?php echo $config['dir_plugins']; ?>mlbox/mlbox.js"></script>
