@@ -12,6 +12,8 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
   <meta name="Generator" content="<?php echo $config['version']; ?>" />
 
   <link rel="stylesheet" href="<?php echo $config['dir_skin'].$config['style']; ?>" />
+  <link rel="stylesheet" href="templates/default/pure.css"/>
+  <link rel="stylesheet" href="templates/default/footer.css"/>
 
   <script type="text/javascript" src="<?php echo $config['dir_core']; ?>common.js"></script>
   <script type="text/javascript" src="<?php echo $config['dir_plugins']; ?>mlbox/mlbox.js"></script>
@@ -26,7 +28,7 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
 <ul id="skiplinks">
   <li><a href="#menu2" tabindex="1"><?php echo $lang['Skip_to_main_menu']; ?></a></li>
   <li><a href="#content" tabindex="2"><?php echo $lang['Skip_to_content']; ?></a></li>
-  <?php 
+  <?php
     if( isset( $config['page_search'] ) && is_numeric( $config['page_search'] ) && isset( $oPage->aPages[$config['page_search']] ) ){ ?>
   <li><a href="#search" tabindex="3"><?php echo $lang['Skip_to_search']; ?></a></li>
   <?php } ?>
@@ -55,7 +57,7 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
   </div>
   <div id="body"<?php if( isset( $config['this_is_order_page'] ) ) echo ' class="order"'; elseif( isset( $config['this_is_basket_page'] ) ) echo ' class="basket-page"'; ?>>
     <div class="container">
-      <div id="column"><?php 
+      <div id="column"><?php
         if( !isset( $config['this_is_order_page'] ) ){ // left column with left menu ?><?php
           if( isset( $config['page_search'] ) && is_numeric( $config['page_search'] ) && isset( $oPage->aPages[$config['page_search']] ) ){ // search form starts here ?>
             <a id="search" tabindex="-1"></a>
@@ -66,8 +68,8 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
                 <em><input type="submit" value="<?php echo $lang['search']; ?> &raquo;" class="submit" /></em>
               </fieldset>
             </form><?php
-          }  // search form ends here ?><?php 
-          echo $oPage->throwMenu( 3, $iContent, 1, true ); // content of left menu ?><?php 
-        }?>       
+          }  // search form ends here ?><?php
+          echo $oPage->throwMenu( 3, $iContent, 1, true ); // content of left menu ?><?php
+        }?>
       </div>
       <div id="content">
