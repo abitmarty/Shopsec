@@ -1,6 +1,7 @@
 :root {
   --viewport: 1400px;
   --themeColor: #138c2b;
+  --categoryHeight: 50px;
 }
 
 @font-face {
@@ -51,12 +52,20 @@
 
   #head3 .container ul li{
     float: left;
+    height: var(--categoryHeight);
   }
 
   #head3 .container ul li a{
-    padding: 0;
+    padding: 0 15px;
     height: auto;
-    line-height: 20px;
+    line-height: var(--categoryHeight);
+    font-weight: bold;
+  }
+
+  #menu2 li a:hover, #menu2 .selected a{
+    background: white;
+    color: black;
+    text-decoration: none;
   }
 
   #head3 .container{
