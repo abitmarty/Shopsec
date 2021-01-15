@@ -37,17 +37,9 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
 
 <div id="container">
   <div id="header">
-    <div id="head1"><?php // first top menu starts here ?>
-      <div class="container">
-        <?php echo $oPage->throwMenu( 1, $iContent, 0 ); // content of top menu first ?>
-      </div>
-    </div>
     <div id="head2"><?php // banner, logo and slogan starts here ?>
       <div class="container">
-        <div id="logo"><?php // logo and slogan ?>
-          <div id="title"><a href="./" tabindex="4"><?php echo $config['logo']; ?></a></div>
-          <div id="slogan"><?php echo $config['slogan']; ?></div>
-        </div>
+          <?php echo $oPage->throwMenu( 1, $iContent, 0 ); // content of top menu first ?>
       </div>
     </div>
     <div id="head3"><?php // second top menu starts here ?>

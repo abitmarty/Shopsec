@@ -1,8 +1,54 @@
+:root {
+  --viewport: 1400px;
+  --themeColor: #138c2b;
+}
+
+@font-face {
+    font-family: 'Poppins'; /*a name to be used later*/
+    src: url('font/poppins/Poppins-Regular.ttf'); /*URL to font*/
+}
+
+*{
+  font-family: 'Poppins';
+}
+
 #header{
   position: fixed;
+  z-index: 999;
   width: 100%;
 }
 
-#body {
-  margin-top: 100px;
+#head2{
+  max-width: var(--viewport);
+  margin: 0 auto;
+}
+
+#head3{
+  display: none;
+  background: #138c2b;
+}
+
+#head3 .container {
+  background: var(--themeColor);
+  border: none;
+}
+
+#body{
+  margin-top: 200px;
+}
+
+@media screen and (min-width: 35.5em){
+  #head3{
+    display: block;
+  }
+}
+
+@media screen and (min-width: 48em){
+
+}
+
+@media screen and (min-width: 64em){
+}
+
+@media screen and (min-width: 80em){
 }

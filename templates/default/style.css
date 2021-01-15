@@ -285,7 +285,7 @@ a:hover{color:#666;text-decoration:underline;}
 #basket .buttons #continue{text-align:left;}
 #basket .buttons #continue .submit{margin-right:5px;padding:3px 5px;}
 #basket #pageDescription{margin-top:10px;}
-#basket legend{display:none;} 
+#basket legend{display:none;}
 
 #basket #save{padding:7px;}
 #basket #save .submit{margin-right:5px;padding:4px 9px;background:#f2f2f2;color:#666;border:2px solid #e0e0e0;font-weight:normal;text-shadow:none;}
