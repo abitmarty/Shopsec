@@ -2,6 +2,9 @@
   --viewport: 1400px;
   --themeColor: #138c2b;
   --categoryHeight: 50px;
+  --iconFontSize: 20px;
+  --headerHight: 30px;
+  --headerMargin: 5px;
 }
 
 @font-face {
@@ -19,6 +22,33 @@
   width: 100%;
 }
 
+.header-icons-container {
+  height: var(--headerHight);
+}
+
+.header-icons {
+  margin: var(--headerMargin);
+  justify-content: flex-end;
+  display: flex;
+}
+
+.header-icons #shop-rating {
+  display: none;
+}
+
+.header-icons #shop-search, .header-icons #shop-account {
+  font-size: var(--iconFontSize);
+  height: var(--headerHight);
+}
+
+.header-icons #shop-search i,  .header-icons #shop-account i{
+  line-height: var(--headerHight);
+}
+
+.header-icon {
+  display: inline-block
+}
+
 #head2{
   max-width: var(--viewport);
   margin: 0 auto;
@@ -26,14 +56,17 @@
 
 #head2 .container {
   background: white;
+  width: 100%;
+  max-width: 960px;
 }
 
 #head2 .container #shop-logo{
   background-image: url('../admin/img/PlantBoxPlantBoxLogo.webp');
   background-repeat: no-repeat;
    background-size: contain;
-   width: 150px;
-   height: 30px;
+   background-position: center center;
+   height: var(--headerHight);
+   margin: var(--headerMargin);
 }
 
 #head3 .container {
@@ -51,7 +84,6 @@
   float: none;
   border: none;
   height: var(--categoryHeight);
-  width: 100
 }
 
 #head3 .container ul li a{
