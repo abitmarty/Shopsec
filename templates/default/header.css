@@ -82,6 +82,7 @@
   display: inline-block;
   border-radius: 100px;
   justify-content: center;
+  padding-right: 10px;
 }
 
 .header-icon:after{
@@ -105,12 +106,19 @@
 #head2{
   max-width: var(--viewport);
   margin: 0 auto;
+  z-index: 999;
+  border: none;
+  position: relative;
 }
 
 #head2 .container {
   background: white;
   width: 100%;
   max-width: 960px;
+  height: auto;
+  border: none !important;
+  webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 #head2 .container #shop-logo{
@@ -143,7 +151,7 @@
   color: black;
   text-decoration: none;
   height: auto;
-  padding: 0px 25px;
+  padding: 0px 15px;
   width: 100%;
   font-size: 14px;
   line-height: var(--categoryHeight);
@@ -156,7 +164,7 @@
 }
 
 #body{
-  margin-top: 332px;
+  margin-top: 240px;
 }
 
 
