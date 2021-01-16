@@ -12,11 +12,11 @@ class Pages
   protected $aFields = null;
   private static $oInstance = null;
 
-  public static function getInstance( ){  
-    if( !isset( self::$oInstance ) ){  
-      self::$oInstance = new Pages( );  
-    }  
-    return self::$oInstance;  
+  public static function getInstance( ){
+    if( !isset( self::$oInstance ) ){
+      self::$oInstance = new Pages( );
+    }
+    return self::$oInstance;
   } // end function getInstance
 
   /**
@@ -40,7 +40,7 @@ class Pages
     if( !isset( $this->aPagesParentsTypes[$iType] ) )
       return null;
     $this->mData = null;
-    
+
     if( isset( $iPageCurrent ) )
       $this->generatePageParents( $iPageCurrent );
 
@@ -65,7 +65,7 @@ class Pages
 
       if( isset( $content ) ){
         $header = null;
-        if( isset( $bDisplayTitles ) ) 
+        if( isset( $bDisplayTitles ) )
           $header = '<div class="type">'.$GLOBALS['aMenuTypes'][$iType].'</div>';
         return '<div id="menu'.$aData['iType'].'">'.$header.'<ul>'.$content.'</ul></div>';
       }
@@ -127,7 +127,7 @@ class Pages
         if( $iDepthLimit > $iDepth && ( $iPageCurrent == $iPage || isset( $this->aPageParents[$iPage] ) || DISPLAY_EXPANDED_MENU === true ) ){
           $this->generateMenuData( $iType, $iPageCurrent, $iDepthLimit, $iDepth + 1, $iPage );
         }
-      } // end foreach    
+      } // end foreach
     }
   } // end function generateMenuData
 
@@ -233,7 +233,7 @@ class Pages
       $iPageCurrent = $iPage;
       $this->mData = null;
     }
-    
+
     if( isset( $this->aPagesParents[$iPage] ) && isset( $this->aPages[$this->aPagesParents[$iPage]] ) ){
       $this->mData[] = '<a href="'.$this->aPages[$this->aPagesParents[$iPage]]['sLinkName'].'">'.$this->aPages[$this->aPagesParents[$iPage]]['sName'].'</a>';
       return $this->throwPagesTree( $this->aPagesParents[$iPage], $iPageCurrent );
@@ -288,7 +288,7 @@ class Pages
 
       $iCount = count( $aPages );
       $content= null;
-      
+
       for( $i = 0; $i < $iCount; $i++ ){
         $aData = $this->aPages[$aPages[$i]];
         $sDescription = null;
@@ -345,12 +345,12 @@ class Pages
 
         $sUrlName = !empty( $this->aPages[$aValue['iPage']]['sNameUrl'] ) ? $this->aPages[$aValue['iPage']]['sNameUrl'] : $this->aPages[$aValue['iPage']]['sName'];
         $this->aPages[$aValue['iPage']]['sLinkName'] = '?'.$sLanguageUrl.change2Url( $sUrlName ).','.$aValue['iPage'];
-        
+
         if( $GLOBALS['config']['start_page'] == $aValue['iPage'] ){
           $this->aPages[$aValue['iPage']]['sLinkNameRaw'] = $this->aPages[$aValue['iPage']]['sLinkName'];
           $this->aPages[$aValue['iPage']]['sLinkName'] = './';
         }
-        
+
         if( $aValue['iPageParent'] > 0 ){
           $this->aPagesChildrens[$aValue['iPageParent']][] = $aValue['iPage'];
           $this->aPagesParents[$aValue['iPage']] = $aValue['iPageParent'];
@@ -393,7 +393,7 @@ class Pages
     }
 
     for( $i = 0; $i < $iCount; $i++ ){
-      $mValue = $this->aPages[$aPages[$i]][$sKey]; 
+      $mValue = $this->aPages[$aPages[$i]][$sKey];
       $aSort[$i][0] = $mValue;
       $aSort[$i][1] = $aPages[$i];
     } // end for
@@ -401,10 +401,10 @@ class Pages
     $sFunctionSort( $aSort );
     for( $i = 0; $i < $iCount; $i++ ){
       $aPages[$i] = $aSort[$i][1];
-    } // end for   
-   
+    } // end for
+
     return $aPages;
-  } // end function sortPages 
+  } // end function sortPages
 
 };
 ?>

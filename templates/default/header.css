@@ -32,15 +32,34 @@
 
 #head3 .container ul{
   border: none;
+  width: 100%;
 }
 
 #head3 .container ul li{
   float: none;
   border: none;
+  height: var(--categoryHeight);
+  width: 100
+}
+
+#head3 .container ul li a{
+  color: black;
+  text-decoration: none;
+  height: auto;
+  padding: 0px 25px;
+  width: 100%;
+  font-size: 14px;
+  line-height: var(--categoryHeight);
+}
+
+#menu2 li a:hover, #menu2 .selected a{
+  background: var(--themeColor);
+  color: white !important;
+  text-decoration: none;
 }
 
 #body{
-  margin-top: 200px;
+  margin-top: 332px;
 }
 
  /* Small screen */
@@ -52,24 +71,28 @@
 
   #head3 .container ul li{
     float: left;
-    height: var(--categoryHeight);
   }
 
   #head3 .container ul li a{
     padding: 0 15px;
     height: auto;
-    line-height: var(--categoryHeight);
     font-weight: bold;
+    width: auto;
+    color: white;
   }
 
   #menu2 li a:hover, #menu2 .selected a{
     background: white;
-    color: black;
+    color: black !important;
     text-decoration: none;
   }
 
   #head3 .container{
     background: var(--themeColor);
+  }
+
+  #body{
+    margin-top: 181px;
   }
 }
 
