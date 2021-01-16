@@ -40,6 +40,7 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
   <div id="header">
     <div id="head2"><?php // banner, logo and slogan starts here ?>
       <div class="container">
+        <div id="shop-logo"> </div>
           <?php echo $oPage->throwMenu( 1, $iContent, 0 ); // content of top menu first ?>
       </div>
     </div>
