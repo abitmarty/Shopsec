@@ -13,6 +13,7 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
 
   <link rel="stylesheet" href="<?php echo $config['dir_skin'].$config['style']; ?>" />
   <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
   <link rel="stylesheet" href="templates/default/footer.css"/>
   <link rel="stylesheet" href="templates/default/header.css"/>
   <link rel="stylesheet" href="templates/default/contact.css"/>
@@ -41,10 +42,10 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
   <div id="header">
     <div id="head2"><?php // banner, logo and slogan starts here ?>
       <div class="container">
-        <div id="shop-logo-container" class="pure-u-1-2">
+        <div id="shop-logo-container" class="pure-u-1-2 pure-u-sm-5-24">
           <div id="shop-logo"></div>
         </div><!--
-        --><div class="header-icons-container pure-u-1-2">
+        --><div class="header-icons-container pure-u-1-2 pure-u-sm-19-24">
           <div class="header-icons">
             <div id="shop-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
             <div id="shop-search" class="header-icon"><i class="fas fa-search"></i></div><!--

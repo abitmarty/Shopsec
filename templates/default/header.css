@@ -3,8 +3,9 @@
   --themeColor: #138c2b;
   --categoryHeight: 50px;
   --iconFontSize: 20px;
-  --headerHight: 30px;
-  --headerMargin: 5px;
+  --headerHightMobile: 40px;
+  --headerHightScreen: 60px;
+  --headerMargin: 10px;
 }
 
 @font-face {
@@ -23,7 +24,7 @@
 }
 
 .header-icons-container {
-  height: var(--headerHight);
+  height: var(--headerHightMobile);
 }
 
 .header-icons {
@@ -38,7 +39,7 @@
 
 .header-icons, .header-icons a{
   font-size: var(--iconFontSize);
-  height: var(--headerHight);
+  height: var(--headerHightMobile);
   color: black;
 }
 
@@ -47,7 +48,7 @@
 }
 
 .header-icons i {
-  line-height: var(--headerHight);
+  line-height: var(--headerHightMobile);
   z-index: 997;
   position: relative;
 }
@@ -62,7 +63,8 @@
   position: absolute;
   font-size: 12px;
   width: 15px;
-  margin-left: 10px;
+  margin-right: 8px;
+  margin-top: calc(var(--headerHightMobile)/2 - 14px);
 }
 
 .header-icons span:after{
@@ -82,7 +84,7 @@
   display: inline-block;
   border-radius: 100px;
   justify-content: center;
-  padding-right: 10px;
+  padding-right: 15px;
 }
 
 .header-icon:after{
@@ -90,11 +92,12 @@
   border-radius: 100px;
   border-top: 0;
   content: '';
-  height: var(--headerHight);
+  height: 40px;
   position: absolute;
   transition: 0.2s ease background;
-  width: var(--headerHight);
-  margin-left: -25px;
+  width: 40px;
+  margin-left: -29px;
+  margin-top: calc(var(--headerHightMobile)/2 - 18px);
   z-index: 996;
 }
 
@@ -126,7 +129,7 @@
   background-repeat: no-repeat;
    background-size: contain;
    background-position: center center;
-   height: var(--headerHight);
+   height: var(--headerHightMobile);
    margin: var(--headerMargin);
 }
 
@@ -171,6 +174,10 @@
 
  /* Small screen */
 @media screen and (min-width: 35.5em){
+  #head2 .container #shop-logo{
+     height: var(--headerHightScreen);
+  }
+
   #head3{
     display: block;
     background: var(--themeColor);
@@ -200,6 +207,44 @@
 
   #body{
     margin-top: 181px;
+  }
+
+  .header-icons #shop-rating {
+    display: inline-block;
+    font-size: 14px;
+    color: #ffcc00;
+  }
+
+  .header-icons #shop-rating:after {
+    content: " 9.5/10";
+    color: black;
+    font-size: 14px;
+    padding-right: 25px;
+  }
+
+  .header-icons-container {
+    height: var(--headerHightScreen);
+  }
+
+  .header-icons, .header-icons a{
+    height: var(--headerHightScreen);
+  }
+
+  .header-icons i {
+    line-height: var(--headerHightScreen);
+  }
+
+  .header-icons span {
+    margin-top: calc(var(--headerHightScreen)/2 - 14px);
+    margin-right: 17px;
+  }
+
+  .header-icon {
+    padding-right: 25px;
+  }
+
+  .header-icon:after{
+    margin-top: calc(var(--headerHightScreen)/2 - 18px);
   }
 }
 
