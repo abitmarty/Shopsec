@@ -58,12 +58,7 @@ class Pages
         $content .= '    <li class="l'.( ( !empty( $GLOBALS['config']['basket_page'] ) && $aData['iPage'] == $GLOBALS['config']['basket_page'] ) ? 'Basket' : ( ( $i == ( $iCount - 1 ) ) ? 'L': $i + 1 ) );
         if( $aData['iPage'] == $iPageCurrent )
           $content .= ' selected';
-        if($iType == 1){
-          $content .= '">  <a href="'.$aData['sLinkName'].'"></a>'.( !empty( $GLOBALS['config']['basket_page'] ) && $aData['iPage'] == $GLOBALS['config']['basket_page'] ? '<span>'.'<strong>'.$GLOBALS['iOrderProducts'].'</strong></span>' : null ).$aData['sSubContent'].'</li>';
-        }
-        else{
-          $content .= '">  <a href="'.$aData['sLinkName'].'">'.$aData['sName'].'</a>'.( !empty( $GLOBALS['config']['basket_page'] ) && $aData['iPage'] == $GLOBALS['config']['basket_page'] ? '<span>'.$GLOBALS['lang']['Basket_products'].':&nbsp;<strong>'.$GLOBALS['iOrderProducts'].'</strong></span>' : null ).$aData['sSubContent'].'</li>';
-        }
+        $content .= '">  <a href="'.$aData['sLinkName'].'">'.$aData['sName'].'</a>'.( !empty( $GLOBALS['config']['basket_page'] ) && $aData['iPage'] == $GLOBALS['config']['basket_page'] ? '<span>'.$GLOBALS['lang']['Basket_products'].':&nbsp;<strong>'.$GLOBALS['iOrderProducts'].'</strong></span>' : null ).$aData['sSubContent'].'</li>';
 
         $i++;
       } // end foreach
@@ -72,6 +67,10 @@ class Pages
         $header = null;
         if( isset( $bDisplayTitles ) )
           $header = '<div class="type">'.$GLOBALS['aMenuTypes'][$iType].'</div>';
+          if($iType == 1){
+            $content = '<a class="header-icon" href="'.$aData['sLinkName'].'"><i class="fas fa-shopping-cart"></i></a>'.( !empty( $GLOBALS['config']['basket_page'] ) && $aData['iPage'] == $GLOBALS['config']['basket_page'] ? '<span>'.'<strong>'.$GLOBALS['iOrderProducts'].'</strong></span>' : null ).$aData['sSubContent'].'</li>';
+            return $content;
+          }
         return '<div id="menu'.$aData['iType'].'">'.$header.'<ul>'.$content.'</ul></div>';
       }
     }
