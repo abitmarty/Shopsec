@@ -3,14 +3,31 @@
 }
 
 .footer_row1{
+
   width: auto;
+  height: 50px;
   margin: 0 auto;
-  padding: 5px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   margin-left: 10px;
+}
+
+.footer_grid{
+  font-family: Poppins, sans-serif;
+  font-weight: lighter;
+}
+
+.beoordeeling_green{
+  color: var(--themeColor);
+  font-size: 20px;
+  padding-top: 5px;
 }
 
 .inline{
   display: inline-block;
+}
+
+.footer_link{
+  color: coolblue;
 }
 
 .pb_footer_title{
