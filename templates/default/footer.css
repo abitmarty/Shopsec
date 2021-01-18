@@ -3,9 +3,16 @@
 }
 
 .footer_row1{
-
   width: auto;
   height: 50px;
+  margin: 0 auto;
+  padding: 0px 0px 0px 0px;
+  margin-left: 10px;
+}
+
+.footer_row2{
+  width: auto;
+  height: 16px;
   margin: 0 auto;
   padding: 0px 0px 0px 0px;
   margin-left: 10px;
@@ -24,6 +31,11 @@
 
 .inline{
   display: inline-block;
+}
+
+.payicons{
+  height: 50px;
+  display:inline;
 }
 
 .footer_link{
