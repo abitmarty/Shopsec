@@ -13,14 +13,14 @@ if( !defined( 'CUSTOMER_PAGE' ) )
         <br>
       <div class="pure-g">
 
-        <div class="pure-u-1 pure-u-md-1-1 inline"><div class="pb_footer_title">Plantbox</div></div>
+      <div class="pure-u-1 pure-u-md-1-3 inline"><div class="pb_footer_title">Plantbox</div></div>
 
-        <div class="pure-u-1 pure-u-md-1-2 inline"><div class="footer_row1">Klanten beoordelen ons met een: <div class="beoordeeling_green">9.5/10</div></div></div><!--
-        --><div class="pure-u-1 pure-u-md-1-2 inline">
+        <div class="pure-u-1 pure-u-md-1-3 inline"><div class="footer_row1">Klanten beoordelen ons met een: <div class="beoordeeling_green">9.5/10</div></div></div><!--
+        --><div class="pure-u-1 pure-u-md-1-3 inline">
         <div class="trust-logos--logo trust-logos--ideal"></div>
         <div class="trust-logos--logo trust-logos--mastercard"></div>
         <div class="trust-logos--logo trust-logos--visa"></div>
-        <div class="trust-logos--logo trust-logos--applepay"></div>
+      <!--  <div class="trust-logos--logo trust-logos--applepay"></div> -->
         </div></div>
 
 
