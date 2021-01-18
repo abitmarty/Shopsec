@@ -5,10 +5,56 @@
 .footer_row1{
   width: auto;
   margin: 0 auto;
+  padding: 5px 0px 0px 0px;
+  margin-left: 10px;
 }
 
 .inline{
   display: inline-block;
+}
+
+.pb_footer_title{
+  font-family: Poppins, sans-serif;
+  font-size: 26px;
+  margin-left: 10px;
+}
+
+.truststars{
+  background-image: url('../admin/img/stars.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /*width: 200px;
+  height: auto;*/
+}
+
+.trust-logos--logo{
+  display: inline-block;
+  height: 3.2rem;
+  background-image: url(https://assets.coolblue.nl/images/default/trust/trust-icons-sprite.20191016.svg);
+  background-repeat: no-repeat;
+  background-size: 60rem;
+  margin-right: 20px;
+}
+
+.trust-logos--ideal{
+  background-position: -30rem 0;
+  width: 3.1rem;
+}
+
+.trust-logos--mastercard {
+    background-position: 0 0;
+    width: 4.7rem;
+}
+
+.trust-logos--visa {
+    background-position: -10rem 0;
+    width: 5.9rem;
+}
+
+.trust-logos--applepay{
+    background-position: -20rem -4.7rem;
+    width: 4.5rem;
 }
 
 
