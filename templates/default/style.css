@@ -248,7 +248,7 @@ a:hover{color:#666;text-decoration:underline;}
 #products .sort{font-family:Poppins, sans-serif; float:left;width:auto;margin:0 10px 0 0;padding:10px 0;border:0;background:none;text-align:left;}
 #products .sort ul{display:inline;list-style:none;}
 #products .sort li{
-  color:var(--themeColor);
+  color:var(--themeColor) ;
   display:inline;
   margin:5px;
   font-weight:bold;
