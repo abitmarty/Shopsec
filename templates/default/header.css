@@ -72,7 +72,7 @@
   margin-top: calc(var(--headerHightMobile)/2 - 14px);
 }
 
-.header-icons span:after{
+#cart-count-indicator:after{
   background: green;
   border-radius: 100px;
   border-top: 0;
@@ -187,7 +187,6 @@
   padding: 0;
   height: 100%;
   text-align: left;
-  padding-right: 25px;
 }
 
 #searchForm .input{
@@ -213,7 +212,7 @@
   width: 100%;
   margin: 0;
   display: inline-block;
-  line-height: var(--headerHightScreen);
+  line-height: var(--headerHightMobile);
   position: inherit;
   box-sizing: border-box;
 }
@@ -229,9 +228,16 @@
 }
 
 
-
  /* Small screen */
 @media screen and (min-width: 35.5em){
+  #searchForm fieldset {
+    box-sizing: border-box;
+    padding: 0;
+    height: 100%;
+    text-align: left;
+    padding-right: 25px;
+  }
+
   #head2 .container #shop-logo{
      height: var(--headerHightScreen);
   }
@@ -312,6 +318,10 @@
 
   #searchForm{
     display: inline-block;
+  }
+
+  #search-span{
+    line-height: var(--headerHightScreen);
   }
 
 }

@@ -68,7 +68,7 @@ class Pages
         if( isset( $bDisplayTitles ) )
           $header = '<div class="type">'.$GLOBALS['aMenuTypes'][$iType].'</div>';
           if($iType == 1){
-            $content = '<a class="header-icon" href="'.$aData['sLinkName'].'"><i class="fas fa-shopping-cart"></i></a>'.( !empty( $GLOBALS['config']['basket_page'] ) && $aData['iPage'] == $GLOBALS['config']['basket_page'] ? '<span>'.'<strong>'.$GLOBALS['iOrderProducts'].'</strong></span>' : null ).$aData['sSubContent'].'</li>';
+            $content = '<a id="shoping-cart-icon" class="header-icon" href="'.$aData['sLinkName'].'"><i class="fas fa-shopping-cart"></i></a>'.( !empty( $GLOBALS['config']['basket_page'] ) && $aData['iPage'] == $GLOBALS['config']['basket_page'] ? '<span id="cart-count-indicator">'.'<strong>'.$GLOBALS['iOrderProducts'].'</strong></span>' : null ).$aData['sSubContent'].'</li>';
             return $content;
           }
         return '<div id="menu'.$aData['iType'].'">'.$header.'<ul>'.$content.'</ul></div>';

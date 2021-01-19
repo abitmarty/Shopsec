@@ -20,6 +20,8 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
   <link rel="stylesheet" href="templates/default/fontawesome/css/all.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <script language="JavaScript" type="text/javascript" src="templates/default/js/jquery.js"></script>
+  <script type="text/javascript" src="templates/default/js/searchbar.js"></script>
   <script type="text/javascript" src="<?php echo $config['dir_core']; ?>common.js"></script>
   <script type="text/javascript" src="<?php echo $config['dir_plugins']; ?>mlbox/mlbox.js"></script>
   <script type="text/javascript">
@@ -46,13 +48,13 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
         <div id="shop-logo-container" class="pure-u-1-2 pure-u-sm-5-24">
           <div id="shop-logo"></div>
         </div><!--
-        --><div class="header-icons-container pure-u-1-2 pure-u-sm-19-24">
+        --><div id="header-icons-container" class="pure-u-1-2 pure-u-sm-19-24">
           <div class="header-icons">
             <div id="shop-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
             <div id="shop-search" class="header-icon"><i class="fas fa-search"></i></div>
             <?php
               if( isset( $config['page_search'] ) && is_numeric( $config['page_search'] ) && isset( $oPage->aPages[$config['page_search']] ) ){ // search form starts here ?>
-                <form class="pure-u-sm-3-5" method="post" action="<?php echo $oPage->aPages[$config['page_search']]['sLinkName']; ?>" id="searchForm">
+                <form class="pure-u-sm-3-5 pure-u-1" method="post" action="<?php echo $oPage->aPages[$config['page_search']]['sLinkName']; ?>" id="searchForm">
                   <fieldset>
                     <legend><?php echo $lang['Search_form']; ?></legend>
                     <span id="search-span"><label for="searchField"><?php echo $lang['search']; ?></label><input placeholder="Type uw zoekterm..." type="text" size="15" name="sPhrase" id="searchField" value="<?php echo $sPhrase; ?>" class="input" maxlength="100" accesskey="1" /></span>
