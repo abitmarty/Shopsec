@@ -71,6 +71,8 @@
 
 .trust-logos-wrapper{
   height: auto;
+  padding-left: 10px;
+  width: auto;
 }
 .trust-logos--mastercard {
     background-position: 0 0;

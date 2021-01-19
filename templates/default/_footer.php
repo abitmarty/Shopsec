@@ -26,8 +26,13 @@ if( !defined( 'CUSTOMER_PAGE' ) )
           --><div class="footer_row2"><a class="footer_link" href="">Algemene voorwaarden</a></div><!--
       --><div class="footer_row2"><a class="footer_link" href="">Privacy</a></div><!--
       --><div class="footer_row2"><a class="footer_link" href="">Cookies</a></div></div><!--
-      --><div class="pure-u-1 pure-u-lg-1-3 inline"><div class="footer_row2"><div><?php echo $config['foot_info']; ?></div></div>
-      </div>
+      --><div class="pure-u-1 pure-u-lg-1-3 inline"><!--
+      --><div class="footer_row2"><strong>E-mail:</strong> plantbox@info.nl</div><!--
+      --><div class="footer_row2"><strong>tel:</strong> 0295-080754</div><!--
+    -->  </div><!--
+      --><div class="pure-u-1 pure-u-lg-1-3 inline">
+            <div class="footer_row2"><div><?php echo $config['foot_info']; ?></div></div>
+        </div>
 
 
     </div>
