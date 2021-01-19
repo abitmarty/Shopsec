@@ -56,8 +56,9 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
               if( isset( $config['page_search'] ) && is_numeric( $config['page_search'] ) && isset( $oPage->aPages[$config['page_search']] ) ){ // search form starts here ?>
                 <form class="pure-u-sm-3-5 pure-u-1" method="post" action="<?php echo $oPage->aPages[$config['page_search']]['sLinkName']; ?>" id="searchForm">
                   <fieldset>
+                    <i class="fas fa-times pure-u-1-12" id="close-search-icon"></i>
                     <legend><?php echo $lang['Search_form']; ?></legend>
-                    <span id="search-span"><label for="searchField"><?php echo $lang['search']; ?></label><input placeholder="Type uw zoekterm..." type="text" size="15" name="sPhrase" id="searchField" value="<?php echo $sPhrase; ?>" class="input" maxlength="100" accesskey="1" /></span>
+                    <span id="search-span" class="pure-u-11-12 pure-u-sm-1"><label for="searchField"><?php echo $lang['search']; ?></label><input placeholder="Type uw zoekterm..." type="text" size="15" name="sPhrase" id="searchField" value="<?php echo $sPhrase; ?>" class="input" maxlength="100" accesskey="1" /></span>
                     <em><button type="submit" class="submit"><i class="fas fa-search"></i></button></em>
                   </fieldset>
                 </form><?php
