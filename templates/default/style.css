@@ -82,21 +82,35 @@ a:hover{color:#666;text-decoration:underline;}
 * html #searchForm .submit{padding:3px 3px 8px} /* IE 6 hack */
 
 #menu3{padding:0 20px 10px;}
-#column .type{margin-top:10px;padding:5px 13px 10px;font-size:1.667em;font-weight:bold;color:#fff;background:#c22463 ;text-shadow:0px 1px 1px rgba(103,11,48,0.3),0px 2px 3px rgba(103,11,48,0.2),0px 3px 4px rgba(103,11,48,0.1);}
+#column .type{margin-top:10px;padding:5px 13px 10px;font-size:1.667em;font-weight:bold;color:#fff;background:var(--themeColor) ;text-shadow:0px 1px 1px rgba(103,11,48,0.3),0px 2px 3px rgba(103,11,48,0.2),0px 3px 4px rgba(103,11,48,0.1);}
 
 /* LEFT MENU */
-#menu3 ul{padding:10px 0;list-style:none;background:#fff;}
-#menu3 li{margin:0 3px;padding:4px 0 4px 13px;border-bottom:1px solid #e0e0e0;}
+#menu3 ul{
+  padding:10px 0;
+  list-style:none;
+  background:#fff;
+
+}
+#menu3 li{
+  margin:0 3px;
+  padding:4px 0 4px 13px;
+  border-bottom:1px solid #e0e0e0;
+  font-family: Poppins, sans-serif;
+  color: var(--themeColor);
+
+}
+
+
 #menu3 a{display:block;width:100%;padding:4px 0;color:#666;font-weight:bold;text-decoration:none;background:none;text-shadow:0px 1px 1px #fff,0px 2px 3px #eee,0px 3px 4px #ddd;}
-#menu3 a:hover, #menu3 .sub1 a:hover{color:#c22463;background:none;text-decoration:underline;}
-#menu3 .selected > a:first-child{color:#c22463;background:none;}
+#menu3 a:hover, #menu3 .sub1 a:hover{color:var(--themeColor);background:none;text-decoration:none;}
+#menu3 .selected > a:first-child{color: var(--themeColor);background:none;}
 
 #menu3 .sub1{margin:0;padding:0;border:0;background:none;}
-#menu3 .sub1 li{padding:2px 0 2px 20px;background:url('img/menu3_sub.gif') no-repeat 7px 8px;border:0px;}
+#menu3 .sub1 li{padding:2px 0 2px 5px;border:0px;}
 #menu3 .sub1 a{display:block;width:100%;padding:2px 0;font-weight:normal;}
 
 /* RIGHT COLUMN STYLES */
-#content{float:left;width:690px;padding:20px 0 10px;text-align:center;background:url('img/body_bg.png') repeat-x left top;}
+#content{ font-family: Poppins, sans-serif; float:left;width:690px;padding:20px 0 10px;text-align:center;background:url('img/body_bg.png') repeat-x left top;}
 * html #content{width:658px;} /* IE 6 hack */
 .order #content{width:100%;}
 #page{position:relative;width:94%;margin:0 auto;text-align:left;}
@@ -108,8 +122,8 @@ a:hover{color:#666;text-decoration:underline;}
 
 /* NAVIGATION PATH - TREE */
 #page div.breadcrumb{position:absolute;top:-25px;left:0px;padding:2px 0;font-size:1em;font-weight:normal;}
-#page div.breadcrumb a{text-decoration:none;}
-#page div.breadcrumb a:hover{text-decoration:underline;}
+#page div.breadcrumb a{text-decoration:none; color:black;}
+#page div.breadcrumb a:hover{text-decoration:none;  color:var(--themeColor);}
 *:first-child+html #page div.breadcrumb{top:-5px;} /* IE 7 hack */
 * html #page div.breadcrumb{top:-5px;} /* IE 6 hack */
 
@@ -163,7 +177,7 @@ a:hover{color:#666;text-decoration:underline;}
 * html #content .subpagesList li{width:100%;} /* IE 6 hack */
 #content .subpagesList li .photo{float:left;margin:0 20px 5px 0;}
 #content .subpagesList li h2{padding-bottom:10px;text-shadow:2px 2px 3px #ddd;}
-#content .subpagesList li h2, #content .subpagesList li h2 a{color:#c22463;font-size:1.25em;font-weight:normal;background:none;}
+#content .subpagesList li h2, #content .subpagesList li h2 a{color:var(--themeColor);font-size:1.25em;font-weight:normal;background:none;}
 #content .subpagesList li h2 a:hover{color:#666;background:none;}
 #content .subpagesList li div.description{font-weight:normal;font-size:1em;line-height:1.4em;}
 #content .subpagesList li ul, #content .subpagesList li ol{float:left;width:100%;margin:5px 0 0 30px;padding:0;}
@@ -196,8 +210,8 @@ a:hover{color:#666;text-decoration:underline;}
 #products li.column1{clear:both;margin-left:0;}
 #products li .photo{margin-top:4px;font-size:0px;line-height:0px;}
 #products li h2{padding:5px 0 5px;font-weight:bold;font-size:1.083em;text-shadow:2px 2px 3px #ddd;}
-#products li h2 a{text-decoration:none;}
-#products li h2 a:hover{text-decoration:underline;}
+#products li h2 a{text-decoration:none; color: black;}
+#products li h2 a:hover{text-decoration:none; color: var(--themeColor);}
 #products li h3{padding-bottom:5px;font-weight:normal;font-size:0.917em;}
 #products li h3, #products li h3 a{color:#666;}
 #products li h3 a:hover{color:#c22463;}
@@ -208,11 +222,11 @@ a:hover{color:#666;text-decoration:underline;}
 #products li div.description ul, #products li div.description ol{margin:5px 0 0 25px;padding:0;}
 #products li .price, #products li .noPrice{margin:5px 0 5px 0;background-color:inherit;color:#c22463;font-weight:bold;text-decoration:none;text-shadow:2px 2px 3px #ddd;}
 #products li .price em{padding:0 6px 0 0;background:inherit;color:#666;font-style:normal;}
-#products li .price strong{font-size:1.167em;}
-#products li .noPrice strong{font-size:1.083em;}
+#products li .price strong{font-size:1.167em; color:var(--themeColor)}
+#products li .noPrice strong{font-size:1.083em;color:var(--themeColor)}
 #products li .price span{padding-left:4px;font-size:1.083em;color:#666;}
 #products li .basket{width:150px; margin:10px auto 0;padding-left:3px;font-size:0.817em;font-weight:bold;}
-#products li .basket a{display:block;padding:5px 32px 8px 7px;color:#fff;background:url('img/button_cart_list.png') no-repeat right bottom;text-decoration:none;text-shadow:0px 1px #630d2f;}
+#products li .basket a{display:block;padding:5px 32px 8px 7px;color:#fff;background: var(--themeColor); ;text-decoration:none;text-shadow:0px 1px #630d2f;}
 #products li .basket a:hover{text-shadow:0px 0px 5px #e9c0d1;}
 
 #products .pages{float:right;width:100%;margin:0;padding:9px 0;border:0;background:none;text-align:right;font-size:1em;}
@@ -226,7 +240,8 @@ a:hover{color:#666;text-decoration:underline;}
 #products .sort ul{display:inline;list-style:none;}
 #products .sort li{display:inline;padding:0 6px;font-weight:bold;border-right:1px solid #666;}
 #products .sort li:last-child{border:none;padding-right:0;}
-#products .sort li a{font-weight:normal;}
+#products .sort li a{font-weight:normal; color: black;}
+#products .sort li a:hover{font-weight:normal; color: var(--themeColor);}
 
 /* PRODUCTS DETAILS */
 #product{float:right;display:block;width:650px;margin:0 20px;text-align:left;}
