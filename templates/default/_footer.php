@@ -16,7 +16,7 @@ if( !defined( 'CUSTOMER_PAGE' ) )
       <div class="pure-u-1 pure-u-md-1-3 inline"><div class="pb_footer_title">Plantbox</div></div>
 
         <div class="pure-u-1 pure-u-md-1-3 inline"><div class="footer_row1">Klanten beoordelen ons met een: <div class="beoordeeling_green">9.5/10</div></div></div><!--
-        --><div class="pure-u-1 pure-u-md-1-3 inline">
+        --><div class="pure-u-1 pure-u-md-1-3 inline trust-logos-wrapper">
         <div class="trust-logos--logo trust-logos--ideal"></div>
         <div class="trust-logos--logo trust-logos--mastercard"></div>
         <div class="trust-logos--logo trust-logos--visa"></div><!--

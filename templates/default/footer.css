@@ -33,10 +33,6 @@
   display: inline-block;
 }
 
-.payicons{
-  height: 50px;
-  display:inline;
-}
 
 .footer_link{
   color: coolblue;
@@ -73,6 +69,9 @@
   width: 3.1rem;
 }
 
+.trust-logos-wrapper{
+  height: auto;
+}
 .trust-logos--mastercard {
     background-position: 0 0;
     width: 4.7rem;
