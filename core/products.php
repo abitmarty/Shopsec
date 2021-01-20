@@ -140,7 +140,7 @@ class Products
           $sImage = $oFile->getDefaultImage( $aData['iProduct'], 2, true, $aData['sLinkName'] );
         }
 
-        $content .= '<li class="pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-4 l'.( ( $i == ( $aKeys['iEnd'] - 1 ) ) ? 'L': $i2 + 1 ).' i'.( ( $i % 2 ) ? 0: 1 ).' column'.( ( $i % 3 ) ? 0: 1 ).'">
+        $content .= '<li class="pure-u-1-2 pure-u-md-1-3  pure-u-lg-1-4 l'.( ( $i == ( $aKeys['iEnd'] - 1 ) ) ? 'L': $i2 + 1 ).' i'.( ( $i % 2 ) ? 0: 1 ).' column'.( ( $i % 3 ) ? 0: 1 ).'">
           '.( isset( $iPage ) && isset( $GLOBALS['aDisplayPagesTreeInProductsList'][$iPage] ) ? '<h3>'.$this->throwProductsPagesTree( $aData['iProduct'] ).'</h3>' : null ).$sImage . '<h2 class="product-category-title pure-u-1"><a href="'.$aData['sLinkName'].'">'.$aData['sName'].'</a></h2>' . $sDescription;
 
         if( is_numeric( $aData['mPrice'] ) ){
