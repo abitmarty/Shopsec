@@ -8,27 +8,6 @@
   --headerMargin: 10px;
 }
 
-/*overwrite defaults*/
-#content{
-  float: none;
-}
-#column{
-  float: none;
-}
-
-#head1 .container, #head2 .container, #head3 .container, #body .container, #foot .container{
-  max-width: var(--viewport);
-  width: auto;
-  border: none;
-}
-
-#head2 .container, #head3 .container, #body .container {
-  webkit-box-shadow: none;
-  box-shadow: none;
-}
-/* end */
-
-
 @font-face {
     font-family: 'Poppins'; /*a name to be used later*/
     src: url('font/poppins/Poppins-Regular.ttf'); /*URL to font*/

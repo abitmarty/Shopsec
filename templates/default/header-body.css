@@ -1,0 +1,34 @@
+/*overwrite default code*/
+#head1 .container, #head2 .container, #head3 .container, #body .container, #foot .container{
+  max-width: var(--viewport);
+  width: auto;
+  border: none;
+}
+
+#head2 .container, #head3 .container, #body .container {
+  webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* end */
+
+#content{
+  float: none;
+  background: transparent;
+}
+
+#column{
+  float: none;
+  padding: 0;
+}
+
+#column #menu3{
+  padding: 0;
+}
+
+#column #menu3 a{
+  font-size: 14px;
+}
+
+#column #menu3 .type{
+  margin: 0;
+}

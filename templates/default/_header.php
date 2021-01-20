@@ -7,6 +7,8 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $config['language']; ?>" lang="<?php echo $config['language']; ?>">
 <head>
   <title><?php echo $sTitle.$config['title']; ?></title>
+  <link rel="icon" href="templates/admin/img/PlantBoxPlantBoxLogo.webp">
+
   <meta name="Language" content="<?php echo $config['language']; ?>" />
   <meta name="Description" content="<?php echo $sDescription; ?>" />
   <meta name="Generator" content="<?php echo $config['version']; ?>" />
@@ -17,6 +19,7 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
   <link rel="stylesheet" href="templates/default/footer.css"/>
   <link rel="stylesheet" href="templates/default/header.css"/>
   <link rel="stylesheet" href="templates/default/contact.css"/>
+  <link rel="stylesheet" href="templates/default/header-body.css"/>
   <link rel="stylesheet" href="templates/default/fontawesome/css/all.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -77,9 +80,9 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
   </div>
   <div id="body"<?php if( isset( $config['this_is_order_page'] ) ) echo ' class="order"'; elseif( isset( $config['this_is_basket_page'] ) ) echo ' class="basket-page"'; ?>>
     <div class="container">
-      <div id="column" class="pure-u-1 pure-u-sm-8-24"><?php
+      <div id="column" class="pure-u-1 pure-u-sm-8-24 pure-u-md-6-24"><?php
         if( !isset( $config['this_is_order_page'] ) ){ // left column with left menu ?><?php
           echo $oPage->throwMenu( 3, $iContent, 1, true ); // content of left menu ?><?php
         }?>
       </div><!--
-    --><div id="content" class="pure-u-1 pure-u-sm-16-24">
+    --><div id="content" class="pure-u-1 pure-u-sm-16-24 pure-u-md-18-24">
