@@ -187,6 +187,8 @@ box-shadow: 0px 0px 4px -1px rgba(0,0,0,0.75);
 
 #searchForm fieldset {
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   display: flex;
   padding: 0;
   height: 100%;
@@ -195,6 +197,8 @@ box-shadow: 0px 0px 4px -1px rgba(0,0,0,0.75);
 
 #searchForm .input{
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   padding: 10px 12px;
   width: 100%;
   border: none !important;
@@ -219,6 +223,8 @@ box-shadow: 0px 0px 4px -1px rgba(0,0,0,0.75);
   line-height: var(--headerHightMobile);
   position: inherit;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 #searchForm .submit{
@@ -246,6 +252,8 @@ box-shadow: 0px 0px 4px -1px rgba(0,0,0,0.75);
 
   #searchForm fieldset {
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     display: inline-block;
     padding: 0;
     height: 100%;

@@ -20,6 +20,7 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
   <link rel="stylesheet" href="templates/default/header.css"/>
   <link rel="stylesheet" href="templates/default/contact.css"/>
   <link rel="stylesheet" href="templates/default/header-body.css"/>
+  <link rel="stylesheet" href="templates/default/category-page.css"/>
   <link rel="stylesheet" href="templates/default/fontawesome/css/all.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
