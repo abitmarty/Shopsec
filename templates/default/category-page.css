@@ -11,6 +11,32 @@
   border: none;
 }
 
+#products li .basket a {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  text-shadow: none;
+  border: 1px solid var(--themeColor);
+  transition: 0.2s ease background, 0.2s ease color;
+}
+
+#products li .basket a::before {
+  font-family: "Font Awesome 5 Free";
+   content: "\f07a";
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+   font-weight: 900;
+   padding-right: 7px;
+}
+
+
+#products li .basket a:hover {
+  text-shadow: none;
+  color: var(--themeColor);
+  background: white;
+}
+
 #products .list li {
   margin: 0;
   box-sizing: border-box;
