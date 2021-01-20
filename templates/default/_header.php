@@ -81,5 +81,5 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
         if( !isset( $config['this_is_order_page'] ) ){ // left column with left menu ?><?php
           echo $oPage->throwMenu( 3, $iContent, 1, true ); // content of left menu ?><?php
         }?>
-      </div>
-      <div id="content" class="pure-u-1 pure-u-sm-16-24">
+      </div><!--
+    --><div id="content" class="pure-u-1 pure-u-sm-16-24">

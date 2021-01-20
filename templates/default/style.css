@@ -71,7 +71,7 @@ a:hover{color:#666;text-decoration:underline;}
 #body .container{overflow:hidden;background:#fff; border-bottom:1px solid #c9c9c9;}
 
 /* LEFT COLUMN STYLES */
-#column{float:left;width:270px;padding:20px 0;}
+#column{float:left;padding:20px 0;}
 .order #column{display:none;}
 
 #searchForm{padding:15px 5px;text-align:center;}
@@ -110,7 +110,7 @@ a:hover{color:#666;text-decoration:underline;}
 #menu3 .sub1 a{display:block;width:100%;padding:2px 0;font-weight:normal;}
 
 /* RIGHT COLUMN STYLES */
-#content{ font-family: Poppins, sans-serif; float:left;width:690px;padding:20px 0 10px;text-align:center;background:url('img/body_bg.png') repeat-x left top;}
+#content{ font-family: Poppins, sans-serif; float:left;padding:20px 0 10px;text-align:center;background:url('img/body_bg.png') repeat-x left top;}
 * html #content{width:658px;} /* IE 6 hack */
 .order #content{width:100%;}
 #page{position:relative;width:94%;margin:0 auto;text-align:left;}
