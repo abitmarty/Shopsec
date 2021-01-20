@@ -26,7 +26,7 @@ a:hover{color:#666;text-decoration:underline;}
 
 #container{position:relative;float:left;width:100%;margin:0 auto;padding:0 0 30px;overflow:hidden;}
 #body, #foot{float:left;width:100%;margin:0 auto;padding:0;}
-#head1 .container, #head2 .container, #head3 .container, #body .container, #foot .container{width:960px;margin:0 auto;text-align:left;}
+#head1 .container, #head2 .container, #head3 .container, #body .container, #foot .container{margin:0 auto;text-align:left;}
 #head2 .container, #head3 .container, #body .container{border-left:1px solid #c9c9c9;border-right:1px solid #c9c9c9;-webkit-box-shadow:0 0 10px rgba(50,50,50,.25);box-shadow:0 0 10px rgba(50,50,50,.25);}
 
 /* HEADER WITH TOP MENU ABOVE LOGO */
@@ -364,7 +364,7 @@ a:hover{color:#666;text-decoration:underline;}
 
 /* FOOTER - SITE AND SCRIPT COPYRIGHTS STYLES */
 #foot{clear:both;font-weight:bold;}
-#foot .container{width:960px;margin:0 auto;padding:15px 0;color:#555;overflow:hidden;text-shadow:0 1px 1px #dbdbdb;}
+#foot .container{margin:0 auto;padding:15px 0;color:#555;overflow:hidden;text-shadow:0 1px 1px #dbdbdb;}
 #foot a{background:inherit;color:#555;font-weight:bold;}
 #foot a:hover{color: var(--themeColor);background:inherit;text-decoration: none; }
 
