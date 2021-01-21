@@ -9,11 +9,11 @@ class Products
   protected $aFields = null;
   private static $oInstance = null;
 
-  public static function getInstance( ){  
-    if( !isset( self::$oInstance ) ){  
-      self::$oInstance = new Products( );  
-    }  
-    return self::$oInstance;  
+  public static function getInstance( ){
+    if( !isset( self::$oInstance ) ){
+      self::$oInstance = new Products( );
+    }
+    return self::$oInstance;
   } // end function getInstance
 
   /**
@@ -37,7 +37,7 @@ class Products
 
     $oPage = Pages::getInstance( );
     $oFFS = FlatFilesSerialize::getInstance( );
-    
+
     $aPages = $oFFS->getData( DB_PRODUCTS_PAGES );
     $aData = $oFFS->getData( DB_PRODUCTS );
 
@@ -133,28 +133,27 @@ class Products
 
         if( !empty( $aData['sDescriptionShort'] ) ){
           $aData['sDescriptionShort'] = changeTxt( $aData['sDescriptionShort'], 'nlNds' );
-          $sDescription = '<div class="description">'.$aData['sDescriptionShort'].'</div>';
+          $sDescription = '<div class="description pure-u-1">'.$aData['sDescriptionShort'].'</div>';
         }
 
         if( isset( $oFile ) ){
           $sImage = $oFile->getDefaultImage( $aData['iProduct'], 2, true, $aData['sLinkName'] );
         }
 
-        $content .= '<li class="l'.( ( $i == ( $aKeys['iEnd'] - 1 ) ) ? 'L': $i2 + 1 ).' i'.( ( $i % 2 ) ? 0: 1 ).' column'.( ( $i % 3 ) ? 0: 1 ).'">
-          <h2><a href="'.$aData['sLinkName'].'">'.$aData['sName'].'</a></h2>
-          '.( isset( $iPage ) && isset( $GLOBALS['aDisplayPagesTreeInProductsList'][$iPage] ) ? '<h3>'.$this->throwProductsPagesTree( $aData['iProduct'] ).'</h3>' : null ).$sImage.$sDescription;
-        
+        $content .= '<li class="pure-u-1-2 pure-u-md-1-3  pure-u-lg-1-4 l'.( ( $i == ( $aKeys['iEnd'] - 1 ) ) ? 'L': $i2 + 1 ).' i'.( ( $i % 2 ) ? 0: 1 ).' column'.( ( $i % 3 ) ? 0: 1 ).'"><div class="category-product-wrapper">
+          '.( isset( $iPage ) && isset( $GLOBALS['aDisplayPagesTreeInProductsList'][$iPage] ) ? '<h3>'.$this->throwProductsPagesTree( $aData['iProduct'] ).'</h3>' : null ).$sImage . '<div class="category-description-wrapper"><h2 class="product-category-title pure-u-1"><a href="'.$aData['sLinkName'].'">'.$aData['sName'].'</a></h2>' . $sDescription;
+
         if( is_numeric( $aData['mPrice'] ) ){
           if( isset( $sBasketPage ) ){
-            $content .= '<div class="basket"><a href="'.$sBasketPage.'&amp;iProductAdd='.$aData['iProduct'].'&amp;iQuantity=1" rel="nofollow" title="'.$lang['Basket_add'].': '.$aData['sName'].'">'.$lang['Basket_add'].'</a></div>';
+            $content .= '<div class="basket pure-u-1"><a href="'.$sBasketPage.'&amp;iProductAdd='.$aData['iProduct'].'&amp;iQuantity=1" rel="nofollow" title="'.$lang['Basket_add'].': '.$aData['sName'].'">'.$lang['Basket_add'].'</a></div>';
           }
-          $content .= '<div class="price"><em>'.$lang['Price'].':</em><strong>'.displayPrice( $aData['mPrice'] ).'</strong><span>'. $config['currency_symbol'] .'</span></div>';
+          $content .= '<div class="price pure-u-1"><em>'.$lang['Price'].':</em><strong>'.displayPrice( $aData['mPrice'] ).'</strong><span>'. $config['currency_symbol'] .'</span></div>';
         }
         else{
           $content .= '<div class="noPrice"><strong>'.$aData['mPrice'].'</strong></div>';
-        }          
+        }
 
-        $content .= '</li>';
+        $content .= '</div></div></li>';
         $i2++;
       } // end for
 
@@ -178,8 +177,8 @@ class Products
             $sSortingLink = $this->throwSortLinks( $sUrl.( isset( $aUrlExt ) ? ( isset( $config['before_amp'] ) ? '?' : '&amp;' ).implode( '&amp;', $aUrlExt ) : null ), $sSort );
           }
         }
-  
-        return '<div id="products" class="productsList">'.$sSortingLink.( isset( $sPages ) ? '<div class="pages" id="pagesBefore">'.$sViewAllLink.$sPages.'</div>' : null ).'<ul class="list">'.$content.'</ul>'.( isset( $sPages ) ? '<div class="pages" id="pagesAfter">'.$sViewAllLink.$sPages.'</div>' : null ).'</div>';
+
+        return '<div id="products" class="productsList">'.$sSortingLink.( isset( $sPages ) ? '<div class="pages" id="pagesBefore">'.$sViewAllLink.$sPages.'</div>' : null ).'<ul class="list pure-g">'.$content.'</ul>'.( isset( $sPages ) ? '<div class="pages" id="pagesAfter">'.$sViewAllLink.$sPages.'</div>' : null ).'</div>';
       }
     }
     else{
@@ -368,18 +367,18 @@ class Products
       $sKey = 'iStatus';
     }
     elseif( $sSort == 'price' ){
-      $sKey = 'mPrice';    
+      $sKey = 'mPrice';
     }
     elseif( $sSort == 'name' ){
-      $sKey = 'sName';    
+      $sKey = 'sName';
     }
     else{
       $sFunctionSort = 'rsort';
-      $sKey = 'iProduct';    
+      $sKey = 'iProduct';
     }
 
     for( $i = 0; $i < $iCount; $i++ ){
-      $mValue = $this->aProducts[$aProducts[$i]][$sKey]; 
+      $mValue = $this->aProducts[$aProducts[$i]][$sKey];
       $aSort[$i][0] = $mValue;
       $aSort[$i][1] = $aProducts[$i];
     } // end for
@@ -388,9 +387,9 @@ class Products
 
     for( $i = 0; $i < $iCount; $i++ ){
       $aProducts[$i] = $aSort[$i][1];
-    } // end for    
+    } // end for
     return $aProducts;
-  } // end function sortProducts 
+  } // end function sortProducts
 
   /**
   * Return links with sorting option

@@ -26,7 +26,7 @@ a:hover{color:#666;text-decoration:underline;}
 
 #container{position:relative;float:left;width:100%;margin:0 auto;padding:0 0 30px;overflow:hidden;}
 #body, #foot{float:left;width:100%;margin:0 auto;padding:0;}
-#head1 .container, #head2 .container, #head3 .container, #body .container, #foot .container{width:960px;margin:0 auto;text-align:left;}
+#head1 .container, #head2 .container, #head3 .container, #body .container, #foot .container{margin:0 auto;text-align:left;}
 #head2 .container, #head3 .container, #body .container{border-left:1px solid #c9c9c9;border-right:1px solid #c9c9c9;-webkit-box-shadow:0 0 10px rgba(50,50,50,.25);box-shadow:0 0 10px rgba(50,50,50,.25);}
 
 /* HEADER WITH TOP MENU ABOVE LOGO */
@@ -71,7 +71,7 @@ a:hover{color:#666;text-decoration:underline;}
 #body .container{overflow:hidden;background:#fff; border-bottom:1px solid #c9c9c9;}
 
 /* LEFT COLUMN STYLES */
-#column{float:left;width:270px;padding:20px 0;}
+#column{float:left;padding:20px 0;}
 .order #column{display:none;}
 
 #searchForm{padding:15px 5px;text-align:center;}
@@ -110,7 +110,7 @@ a:hover{color:#666;text-decoration:underline;}
 #menu3 .sub1 a{display:block;width:100%;padding:2px 0;font-weight:normal;}
 
 /* RIGHT COLUMN STYLES */
-#content{ font-family: Poppins, sans-serif; float:left;width:690px;padding:20px 0 10px;text-align:center;background:url('img/body_bg.png') repeat-x left top;}
+#content{ font-family: Poppins, sans-serif; float:left;padding:20px 0 10px;text-align:center;background:url('img/body_bg.png') repeat-x left top;}
 * html #content{width:658px;} /* IE 6 hack */
 .order #content{width:100%;}
 #page{position:relative;width:94%;margin:0 auto;text-align:left;}
@@ -205,7 +205,6 @@ a:hover{color:#666;text-decoration:underline;}
 #products ul.list{float:left;width:100%;list-style:none;margin-top:20px;}
 #products .list li{
   float:left;
-  width:200px;
   margin-left:20px;
   padding:10px 0;
   text-align:center;
@@ -234,7 +233,7 @@ a:hover{color:#666;text-decoration:underline;}
 #products li .price strong{font-size:1.167em; color:var(--themeColor)}
 #products li .noPrice strong{font-size:1.083em;color:var(--themeColor)}
 #products li .price span{padding-left:4px;font-size:1.083em;color:#666;}
-#products li .basket{width:150px; margin:10px auto 0;padding-left:3px;font-size:14px;font-weight:bold;}
+#products li .basket{margin:10px auto 0;padding-left:3px;font-size:14px;font-weight:bold;}
 #products li .basket a{display:block;padding:5px 32px 8px 30px;color:#fff;background: var(--themeColor); ;text-decoration:none;text-shadow:0px 1px #630d2f;}
 #products li .basket a:hover{text-shadow:0px 0px 5px #e9c0d1;}
 
@@ -364,7 +363,7 @@ a:hover{color:#666;text-decoration:underline;}
 
 /* FOOTER - SITE AND SCRIPT COPYRIGHTS STYLES */
 #foot{clear:both;font-weight:bold;}
-#foot .container{width:960px;margin:0 auto;padding:15px 0;color:#555;overflow:hidden;text-shadow:0 1px 1px #dbdbdb;}
+#foot .container{margin:0 auto;padding:15px 0;color:#555;overflow:hidden;text-shadow:0 1px 1px #dbdbdb;}
 #foot a{background:inherit;color:#555;font-weight:bold;}
 #foot a:hover{color: var(--themeColor);background:inherit;text-decoration: none; }
 

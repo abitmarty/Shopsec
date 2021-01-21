@@ -25,8 +25,8 @@ $config['time_diff'] = 0;
 /*
 * Administrator's login and password
 */
-$config['login'] = "admin";
-$config['pass'] = "admin";
+$config['login'] = "flowerpower";
+$config['pass'] = "flowerpower";
 
 /*
 * Client-side default language
@@ -255,8 +255,8 @@ $config_db['orders_ext'] = $config['dir_database'].'orders_ext.php';
 $config['language'] = LANGUAGE;
 $config['version'] = '6.6';
 
-$config['last_login'] = "1607533204";
-$config['before_last_login'] = "1607532911";
+$config['last_login'] = "1611060326";
+$config['before_last_login'] = "1611060263";
 
 $config['manual_link'] = 'http://'.( ( $config['admin_lang']=='pl' ) ? 'pl' : 'en' ).'-';
 

@@ -12,11 +12,11 @@ class Files
   protected $mData = null;
   private static $oInstance = null;
 
-  public static function getInstance( $mValue = null, $bProduct = null ){  
+  public static function getInstance( $mValue = null, $bProduct = null ){
     if( !isset( self::$oInstance ) ){
-      self::$oInstance = new Files( $mValue, $bProduct );  
-    }  
-    return self::$oInstance;  
+      self::$oInstance = new Files( $mValue, $bProduct );
+    }
+    return self::$oInstance;
   } // end function getInstance
 
   /**
@@ -135,7 +135,7 @@ class Files
       if( isset( $bLinks ) ){
         $sLink = isset( $sLink ) ? '<a href="'.$sLink.'" tabindex="-1">' : '<a href="'.DIR_FILES.$this->aImagesDefault[$iLinkType][$iLink]['sFileName'].'" class="mlbox[images]">';
       }
-      return '<div class="photo">'.$sLink.'<img src="'.DIR_FILES.$this->aImagesDefault[$iLinkType][$iLink]['iSizeValue1'].'/'.$this->aImagesDefault[$iLinkType][$iLink]['sFileName'].'" alt="'.( isset( $this->aImagesDefault[$iLinkType][$iLink]['sDescription'] ) ? $this->aImagesDefault[$iLinkType][$iLink]['sDescription'] : $this->aImagesDefault[$iLinkType][$iLink]['sFileName'] ).'" />'.( isset( $bLinks ) ? '</a>' : null ).'</div>';
+      return '<div class="photo pure-u-1">'.$sLink.'<img src="'.DIR_FILES.$this->aImagesDefault[$iLinkType][$iLink]['iSizeValue1'].'/'.$this->aImagesDefault[$iLinkType][$iLink]['sFileName'].'" alt="'.( isset( $this->aImagesDefault[$iLinkType][$iLink]['sDescription'] ) ? $this->aImagesDefault[$iLinkType][$iLink]['sDescription'] : $this->aImagesDefault[$iLinkType][$iLink]['sFileName'] ).'" />'.( isset( $bLinks ) ? '</a>' : null ).'</div>';
     }
   } // end function getDefaultImage
 
@@ -228,7 +228,7 @@ class Files
 
               if( isset( $bDefine ) ){
                 $this->aFilesImages[$aValue['iFile']] = $aValue;
-                $this->aLinkFilesImages[$aValue[$sKey]][] = $aValue['iFile'];              
+                $this->aLinkFilesImages[$aValue[$sKey]][] = $aValue['iFile'];
               }
             }
           } // end foreach

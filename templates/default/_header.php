@@ -7,6 +7,8 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $config['language']; ?>" lang="<?php echo $config['language']; ?>">
 <head>
   <title><?php echo $sTitle.$config['title']; ?></title>
+  <link rel="icon" href="templates/admin/img/PlantBoxPlantBoxLogo.webp">
+
   <meta name="Language" content="<?php echo $config['language']; ?>" />
   <meta name="Description" content="<?php echo $sDescription; ?>" />
   <meta name="Generator" content="<?php echo $config['version']; ?>" />
@@ -17,6 +19,8 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
   <link rel="stylesheet" href="templates/default/footer.css"/>
   <link rel="stylesheet" href="templates/default/header.css"/>
   <link rel="stylesheet" href="templates/default/contact.css"/>
+  <link rel="stylesheet" href="templates/default/header-body.css"/>
+  <link rel="stylesheet" href="templates/default/category-page.css"/>
   <link rel="stylesheet" href="templates/default/fontawesome/css/all.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -56,8 +60,9 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
               if( isset( $config['page_search'] ) && is_numeric( $config['page_search'] ) && isset( $oPage->aPages[$config['page_search']] ) ){ // search form starts here ?>
                 <form class="pure-u-sm-3-5 pure-u-1" method="post" action="<?php echo $oPage->aPages[$config['page_search']]['sLinkName']; ?>" id="searchForm">
                   <fieldset>
+                    <i class="fas fa-times pure-u-1-12" id="close-search-icon"></i>
                     <legend><?php echo $lang['Search_form']; ?></legend>
-                    <span id="search-span"><label for="searchField"><?php echo $lang['search']; ?></label><input placeholder="Type uw zoekterm..." type="text" size="15" name="sPhrase" id="searchField" value="<?php echo $sPhrase; ?>" class="input" maxlength="100" accesskey="1" /></span>
+                    <span id="search-span" class="pure-u-11-12 pure-u-sm-1"><label for="searchField"><?php echo $lang['search']; ?></label><input placeholder="Type uw zoekterm..." type="text" size="15" name="sPhrase" id="searchField" value="<?php echo $sPhrase; ?>" class="input" maxlength="100" accesskey="1" /></span>
                     <em><button type="submit" class="submit"><i class="fas fa-search"></i></button></em>
                   </fieldset>
                 </form><?php
@@ -76,9 +81,9 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
   </div>
   <div id="body"<?php if( isset( $config['this_is_order_page'] ) ) echo ' class="order"'; elseif( isset( $config['this_is_basket_page'] ) ) echo ' class="basket-page"'; ?>>
     <div class="container">
-      <div id="column"><?php
+      <div id="column" class="pure-u-1 pure-u-sm-8-24 pure-u-md-6-24"><?php
         if( !isset( $config['this_is_order_page'] ) ){ // left column with left menu ?><?php
           echo $oPage->throwMenu( 3, $iContent, 1, true ); // content of left menu ?><?php
         }?>
-      </div>
-      <div id="content">
+      </div><!--
+    --><div id="content" class="pure-u-1 pure-u-sm-16-24 pure-u-md-18-24">

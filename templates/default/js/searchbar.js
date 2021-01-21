@@ -4,6 +4,10 @@
        setSearchBarVisible();
      }
    });
+
+   $("#close-search-icon").click(function(){
+     setDefaultSmall();
+   });
 });
 
 function setSearchBarVisible() {
