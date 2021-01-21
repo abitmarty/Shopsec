@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  height: 100%;
 }
 
 .category-description-wrapper{
@@ -81,4 +82,7 @@
 
 #products li div.description {
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
