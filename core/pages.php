@@ -307,7 +307,7 @@ class Pages
           $sImage = $oFile->getDefaultImage( $aData['iPage'], 1, true, $aData['sLinkName'] );
         }
 
-        $content .= '<li class="l'.( ( $i == ( $iCount - 1 ) ) ? 'L': $i + 1 ).'">'.$sImage.'<h2><a href="'.$aData['sLinkName'].'">'.$aData['sName'].'</a></h2>'.$sDescription.'</li>';
+        $content .= '<li class="l'.( ( $i == ( $iCount - 1 ) ) ? 'L': $i + 1 ).'">'.$sImage.'<h2><a href="'.$aData['sLinkName'].'">'.$aData['sName'].'</a></h2></li>';
       } // end for
 
       if( isset( $content ) ){

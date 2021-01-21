@@ -86,3 +86,18 @@
   flex-direction: column;
   flex-grow: 1;
 }
+
+
+#content .subpagesList li {
+  background: white;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border:none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+#content .subpagesList li h2 {
+  padding: 0;
+}
