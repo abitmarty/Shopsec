@@ -1,4 +1,7 @@
+var screenWidth = $(window).width();
+
  $( document ).ready(function() {
+   console.log(screenWidth);
    $("#shop-search").click(function(){
      if ($(window).width() < 568){
        setSearchBarVisible();
@@ -9,7 +12,6 @@
      setDefaultSmall();
    });
 });
-
 function setSearchBarVisible() {
   $("#searchForm").css({"display":"inline-block"});
   $("#shop-account").css({"display":"none"});
@@ -44,11 +46,16 @@ function setDefaultSmall() {
 }
 
 $(window).on('resize', function(){
-  if ($(window).width() >= 568){
-    setDefault();
-  }
+  var screenWidthNew = $(window).width();
 
-  if ($(window).width() < 568){
-    setDefaultSmall();
+  if(screenWidth != screenWidthNew){
+    if ($(window).width() >= 568){
+      setDefault();
+    }
+
+    if ($(window).width() < 568){
+      setDefaultSmall();
+    }
   }
+  screenWidth = $(window).width();
 });
