@@ -28,7 +28,7 @@
 }
 
 #header-icons-container {
-  height: var(--headerHightMobile);
+  height: calc(var(--headerHightMobile) + (var(--headerMargin)*2));
   display: inline-flex;
   flex-grow: 1;
 }
