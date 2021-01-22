@@ -150,6 +150,10 @@
    margin: var(--headerMargin);
 }
 
+#head3 {
+  display: none;
+}
+
 #head3 .container {
   background: white;
   border: none;
@@ -184,7 +188,7 @@
 }
 
 #body{
-  margin-top: 260px;
+  margin-top: 60px;
 }
 
 #shop-menu-container {
