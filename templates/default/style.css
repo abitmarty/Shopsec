@@ -295,36 +295,49 @@ a:hover{color:#666;text-decoration:underline;}
 #product div.content p{padding-bottom:10px;}
 
 /* BASKET AND ORDER */
-#orderedProducts table{width:100%;margin:0;border-bottom:2px solid #e0e0e0;font-size:1em;color:#c22463;text-shadow:1px 1px #e0e0e0;}
+#orderedProducts table{font-family: Poppins, sans-serif; width:100%;margin:0;border-bottom:2px solid #e0e0e0;font-size:1em;color:#c22463;text-shadow:1px 1px #e0e0e0;}
 #orderedProducts td, #orderedProducts th{padding:6px 7px;}
-#orderedProducts thead .price, #orderedProducts thead .quantity, #orderedProducts thead .summary{text-align:right;}
-#orderedProducts thead td{padding-bottom:11px;background:#2e6896;color:#fff;text-shadow:1px 1px #17344b;}
+#orderedProducts thead .price, #orderedProducts thead .quantity, #orderedProducts thead .summary{
+  text-align:right;
+  font-family: Poppins, sans-serif;
+}
+#orderedProducts thead td{padding-bottom:11px;color:white;background-color:var(--themeColor); text-decoration: none;}
 #orderedProducts thead em{padding:0 4px 0 0;font-style:normal;}
-#orderedProducts tbody th, #orderedProducts tbody td{border-top:2px solid #fff;background:#f0f6fa url('img/body.png');border-bottom:1px solid #e0e0e0;}
+#orderedProducts tbody{
+  border: 1px solid var(--themeColor);
+  border-radius: 10px;
+  padding: 5px;
+}
+#orderedProducts tbody th, #orderedProducts tbody td{
+  /*border-top:2px solid #fff;
+  border-bottom:1px solid #e0e0e0;*/
+}
 #orderedProducts tbody th{text-align:left;}
-#orderedProducts tbody th a{background:inherit;}
-#orderedProducts tbody .price, #orderedProducts tbody .summary{font-weight:bold;text-align:right;}
-#orderedProducts tbody .quantity, #orderedProducts tbody .quantity input{text-align:right;}
+#orderedProducts tbody th a{text-decoration: none; color:var(--themeColor); background:inherit;}
+#orderedProducts tbody .price, #orderedProducts tbody .summary{font-family: Poppins, sans-serif; color: var(--themeColor); font-weight:bold;text-align:right;}
+#orderedProducts tbody .quantity, #orderedProducts tbody .quantity input{font-family: Poppins, sans-serif; border:none; border-radius: 10px;text-align:right;}
 #orderedProducts tbody .quantity label{display:none;}
 #orderedProducts tbody a:hover{background:inherit;color:#666;}
-#orderedProducts tfoot{background:url('img/body.png');text-align:right;}
-#orderedProducts tfoot .summaryProducts, #orderedProducts tfoot .summaryProducts th, #orderedProducts tfoot .summaryShippingPayment, #orderedProducts tfoot .summaryOrder{text-align:right;}
-#orderedProducts tfoot .nextStep .submit{background:#c22463;text-shadow:1px 1px #630d2f;}
-#orderedProducts tfoot .nextStep .submit:hover{background:#154a72;text-shadow:1px 1px #17344b;}
+#orderedProducts tfoot{text-align:right;}
+#orderedProducts tfoot .summaryProducts, #orderedProducts tfoot .summaryProducts th, #orderedProducts tfoot .summaryShippingPayment, #orderedProducts tfoot .summaryOrder{
+  text-align:right;
+}
+#orderedProducts tfoot .nextStep .submit{font-family: Poppins, sans-serif; background-color: var(--themeColor)}
+#orderedProducts tfoot .nextStep .submit:hover{font-family: Poppins, sans-serif;}
 
 #basket #orderedProducts table{margin:10px 0 0;}
 #basket .info{padding:10px 0;text-align:left;}
 #basket #recount{background:#fff;border-bottom:2px solid #e0e0e0;}
 #basket #recount td{border-bottom:1px solid #e0e0e0;text-align:right;}
-#basket #recount .submit{padding:2px 3px;}
-#basket #recount .submit:hover, #basket .buttons #continue .submit:hover{background:#c22463;}
-#basket .summaryProducts{font-size:1.36em;font-weight:bold;}
+#basket #recount .submit{padding:5px 5px; font-family: Poppins, sans-serif; background-color: var(--themeColor);}
+#basket #recount .submit:hover, #basket .buttons #continue .submit:hover{background: var(--themeColor);}
+#basket .summaryProducts{background: none; font-family: Poppins, sans-serif; color: var(--themeColor); font-size:1.36em;font-weight:bold;}
 #basket .summaryProducts #summary{font-weight:bold;}
 #basket .del{padding:0 5px 0 10px;}
-#basket .del a{background:inherit;color:#666;}
-#basket .del a:hover{background:inherit;color:#c22463;}
-#basket .buttons #continue{text-align:left;}
-#basket .buttons #continue .submit{margin-right:5px;padding:3px 5px;}
+#basket .del a{text-decoration:none;background:inherit;color:#666;}
+#basket .del a:hover{background:inherit;color:var(--themeColor);}
+#basket .buttons #continue{ text-align:left; text-decoration: none;}
+#basket .buttons #continue .submit{ font-family: Poppins, sans-serif;background-color: var(--themeColor);margin-right:5px;padding:3px 5px;}
 #basket #pageDescription{margin-top:10px;}
 #basket legend{display:none;}
 
