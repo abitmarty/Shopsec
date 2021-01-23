@@ -16,6 +16,12 @@ $( document ).ready(function() {
       closeMenu();
     }
   });
+
+  $("#body-overlay").click(function(){
+    if ($(window).width() < 568){
+      closeMenu();
+    }
+  });
 });
 
 function setMenu(){
