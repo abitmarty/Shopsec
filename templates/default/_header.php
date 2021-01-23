@@ -45,7 +45,7 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
   <li><a href="#search" tabindex="3"><?php echo $lang['Skip_to_search']; ?></a></li>
   <?php } ?>
 </ul>
-
+<div id="body-overlay"></div>
 <div id="container">
   <div id="header">
     <div id="head2"><?php // banner, logo and slogan starts here ?>

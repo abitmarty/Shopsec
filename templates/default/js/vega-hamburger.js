@@ -21,22 +21,23 @@ $( document ).ready(function() {
 function setMenu(){
   if(!clicked){
     $("#head3").css({"display":"block"});
+    $("#body-overlay").addClass("openOverlay");
   }
   else {
     $("#head3").css({"display":"none"});
+    $("#body-overlay").removeClass("openOverlay");
   }
 }
 
 function closeMenu(){
-  clicked = true;
-  setMenu();
+  $("#head3").css({"display":"none"});
+  $("#body-overlay").removeClass("openOverlay");
   clicked = false;
 }
 
 $(window).on('resize', function(){
   if ($(window).width() >= 568){
-    clicked = false;
-    setMenu();
+    $("#head3").css({"display":"block"});
   }
 
   if ($(window).width() < 568){

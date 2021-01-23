@@ -6,7 +6,8 @@
   --headerHightMobile: 40px;
   --headerHightScreen: 60px;
   --headerMargin: 10px;
-  --headerIconPadding: 40px;
+  --headerIconMargin: 40px;
+  --overlayTranspeancy: 0.2;
 }
 
 @font-face {
@@ -16,6 +17,25 @@
 
 *{
   font-family: 'Poppins';
+}
+
+#body-overlay{
+
+}
+
+.openOverlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: Black;
+  z-index: 1;
+  -moz-opacity: var(--overlayTranspeancy);          /* Netscape */
+  -khtml-opacity: var(--overlayTranspeancy);        /* Safari 1.x */
+  opacity: var(--overlayTranspeancy);
+}
+
+#column .type {
+  text-shadow: none;
 }
 
 #header{
@@ -59,10 +79,6 @@
   font-size: var(--iconFontSize);
   height: var(--headerHightMobile);
   color: black;
-}
-
-.header-icons:hover, .header-icons a:hover{
-  cursor: pointer;
 }
 
 .header-icons i {
@@ -267,7 +283,7 @@
   z-index: 999;
 }
 
-.fa-times{
+.fa-times, .fa-heart, .fa-bars, .fa-search{
   text-align: center;
   cursor: pointer;
 }
@@ -330,7 +346,7 @@
     content: " 9.5/10";
     color: black;
     font-size: 14px;
-    padding-right: var(--headerIconPadding);
+    padding-right: var(--headerIconMargin);
   }
 
   .header-icons-container {
@@ -351,7 +367,8 @@
   }
 
   .header-icon {
-    padding-right: var(--headerIconPadding);
+    margin-right: var(--headerIconMargin);
+    padding: 0;
   }
 
   #shop-menu-container{
@@ -385,18 +402,18 @@
     height: 100%;
     width: 100%;
     text-align: left;
-    padding-right: var(--headerIconPadding);
+    padding-right: var(--headerIconMargin);
   }
 
   #shoping-cart-icon {
-    padding-right: 10px;
+    margin-right: 10px;
   }
 
 }
 
 @media screen and (min-width: 48em){
   #searchForm fieldset {
-    padding-right: calc(var(--headerIconPadding) + 20px);
+    padding-right: calc(var(--headerIconMargin) + 20px);
   }
 }
 
