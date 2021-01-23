@@ -69,7 +69,7 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
                   </fieldset>
                 </form><?php
               }  // search form ends here ?><!--
-            --><div id="shop-account" class="header-icon"><i class="fas fa-user"></i></div><!--
+            --><a href="./admin-iuw.php" target="black" id="shop-account" class="header-icon"><i class="fas fa-user"></i></a><!--
           --><div id="shop-favourite" class="header-icon"><i class="fas fa-heart"></i></div>
             <?php echo $oPage->throwMenu( 1, $iContent, 0 ); // content of top menu first ?>
           </div>
