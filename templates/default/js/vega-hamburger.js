@@ -4,6 +4,14 @@ $( document ).ready(function() {
     setMenu();
     clicked = !clicked;
   });
+
+  $("#body").click(function(){
+    closeMenu();
+  });
+
+  $("#foot").click(function(){
+    closeMenu();
+  });
 });
 
 function setMenu(){
@@ -15,6 +23,12 @@ function setMenu(){
   }
 }
 
+function closeMenu(){
+  clicked = true;
+  setMenu();
+  clicked = false;
+}
+
 $(window).on('resize', function(){
   if ($(window).width() >= 568){
     clicked = false;
@@ -22,8 +36,6 @@ $(window).on('resize', function(){
   }
 
   if ($(window).width() < 568){
-    clicked = true;
-    setMenu();
-    clicked = false;
+    closeMenu();
   }
 });

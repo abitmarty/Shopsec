@@ -1,7 +1,6 @@
 var screenWidth = $(window).width();
 
  $( document ).ready(function() {
-   console.log(screenWidth);
    $("#shop-search").click(function(){
      if ($(window).width() < 568){
        setSearchBarVisible();
