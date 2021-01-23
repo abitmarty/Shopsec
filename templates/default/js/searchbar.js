@@ -20,6 +20,7 @@ function setSearchBarVisible() {
   $("#shop-logo-container").css({"display":"none"});
   $("#header-icons-container").removeClass("pure-u-1-2");
   $("#shop-menu-container").css({"display":"none"});
+  $("#body-overlay").addClass("openOverlay");
 }
 
 function setDefault() {
@@ -31,6 +32,7 @@ function setDefault() {
   $("#header-icons-container").addClass("pure-u-1-2");
   $("#shop-search").css({"display":"none"});
   $("#shop-menu-container").css({"display":"none"});
+  $("#body-overlay").removeClass("openOverlay");
 }
 
 function setDefaultSmall() {
@@ -42,6 +44,7 @@ function setDefaultSmall() {
   $("#shop-logo-container").css({"display":"inline-block"});
   $("#header-icons-container").addClass("pure-u-1-2");
   $("#shop-menu-container").css({"display":"inline-block"});
+  $("#body-overlay").removeClass("openOverlay");
 }
 
 $(window).on('resize', function(){
