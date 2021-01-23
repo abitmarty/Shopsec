@@ -51,9 +51,9 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
     <div id="head2"><?php // banner, logo and slogan starts here ?>
       <div class="container">
         <div id="shop-menu-container"><div class="header-icons shop-menu-header-icon"><div id="shop-menu" class="header-icon"><i class="fas fa-bars"></i></div></div></div><!--
-        --><div id="shop-logo-container" class="pure-u-3-8 pure-u-sm-5-24">
+        --><a href="./" id="shop-logo-container" class="pure-u-3-8 pure-u-sm-5-24">
           <div id="shop-logo"></div>
-        </div><!--
+        </a><!--
         --><div id="header-icons-container" class="pure-u-1-2 pure-u-sm-19-24">
           <div class="header-icons">
             <div id="shop-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
