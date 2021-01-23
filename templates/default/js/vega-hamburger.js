@@ -6,11 +6,15 @@ $( document ).ready(function() {
   });
 
   $("#body").click(function(){
-    closeMenu();
+    if ($(window).width() < 568){
+      closeMenu();
+    }
   });
 
   $("#foot").click(function(){
-    closeMenu();
+    if ($(window).width() < 568){
+      closeMenu();
+    }
   });
 });
 
