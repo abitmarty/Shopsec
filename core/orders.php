@@ -60,20 +60,20 @@ class Orders
         }
         else{
           // basket
-          $content .= '<tr class="l'.( ( $i == ( $iCount - 1 ) ) ? 'L': $i + 1 ).'">
-            <th>
+          $content .= '<tr class="pure-u-1 boxed l'.( ( $i == ( $iCount - 1 ) ) ? 'L': $i + 1 ).'">
+            <th class="pure-u-8-24 boxed">
               <a href="'.$aData['sLinkName'].'">'.$aData['sName'].'</a>
-            </th>
-            <td class="price">
+            </th><!--
+            --><td class="pure-u-4-24 boxed price">
               '.$aData['sPrice'].'
-            </td>
-            <td class="quantity">
+            </td><!--
+            --><td class="pure-u-4-24 boxed quantity">
               <label for="quantity'.$aData['iProduct'].'">'.$lang['Quantity'].'</label><input type="text" name="aProducts['.$aData['iProduct'].']" value="'.$aData['iQuantity'].'" size="3" maxlength="4" class="input" id="quantity'.$aData['iProduct'].'" alt="int" />
-            </td>
-            <td class="summary">
+            </td><!--
+            --><td class="pure-u-4-24 boxed summary">
               '.$aData['sSummary'].'
-            </td>
-            <td class="del">
+            </td><!--
+            --><td class="pure-u-4-24 boxed del">
               <a href="'.$aData['sLinkDelete'].'" title="'.$lang['Delete'].' - '.$aData['sName'].'">'.$lang['Delete'].'</a>
             </td>
           </tr>';
@@ -120,7 +120,7 @@ class Orders
         if( isset( $GLOBALS['aData']['sLinkName'] ) )
           $this->aProducts[$iProduct]['sLinkDelete'] = $GLOBALS['aData']['sLinkName'].'&amp;iProductDelete='.$aData['iProduct'];
         $_SESSION['iOrderQuantity'.LANGUAGE] += $aData['iQuantity'];
-        $_SESSION['fOrderSummary'.LANGUAGE]  += ( $aData['fPrice'] * $aData['iQuantity'] );        
+        $_SESSION['fOrderSummary'.LANGUAGE]  += ( $aData['fPrice'] * $aData['iQuantity'] );
       } // end foreach
 
       if( isset( $_SESSION['fOrderSummary'.LANGUAGE] ) ){
@@ -181,7 +181,7 @@ class Orders
       if( count( $aBasket[$iOrder] ) == 0 )
         unset( $aBasket[$iOrder] );
       $oFFS->saveData( DB_ORDERS_TEMP, $aBasket );
-    }        
+    }
   } // end function deleteFromBasket
 
   /**
@@ -197,7 +197,7 @@ class Orders
       $oProduct = Products::getInstance( );
 
       $aBasket = $oFFS->getData( DB_ORDERS_TEMP );
-      
+
       foreach( $aData as $iProduct => $iQuantity ){
         if( $iQuantity > 0 && $iQuantity <= $GLOBALS['config']['max_product_quantity'] && is_numeric( $iQuantity ) && isset( $oProduct->aProducts[$iProduct] ) ){
           $iQuantity = trim( $iQuantity );
@@ -213,12 +213,12 @@ class Orders
             else{
               if( $iQuantity != $aBasket[$iOrder][$iProduct]['iQuantity'] ){
                 $aBasket[$iOrder][$iProduct]['iQuantity'] = (int) $iQuantity;
-                $bChanged = true;              
+                $bChanged = true;
               }
             }
           }
           else{
-            
+
             $aBasket[$iOrder][$iProduct] = Array( 'iQuantity' => (int) $iQuantity, 'fPrice' => $oProduct->aProducts[$iProduct]['mPrice'], 'sName' => $oProduct->aProducts[$iProduct]['sName'] );
             $bChanged = true;
             $bDeleteOldOrders = true;
@@ -314,8 +314,8 @@ class Orders
     if( isset( $aBasket[$iOrderTemp] ) ){
       unset( $aBasket[$iOrderTemp] );
       $oFFS->saveData( DB_ORDERS_TEMP, $aBasket );
-    }       
-    
+    }
+
     $_SESSION['iOrderQuantity'.LANGUAGE] = 0;
     $_SESSION['fOrderSummary'.LANGUAGE] = null;
 
@@ -464,7 +464,7 @@ class Orders
           foreach( $aData['aPayments'] as $iPayment => $sPriceModify ){
             if( isset( $aPayments[$iPayment] ) ){
               $fShippingPaymentPrice = !empty( $sPriceModify ) ? generatePrice( $aData['fPrice'], $sPriceModify ) : $aData['fPrice'];
-              $content .= 
+              $content .=
               '<option value="'.$iShipping.';'.$iPayment.';'.$fShippingPaymentPrice.'">'.
                 $aData['sName'].' - '.$aPayments[$iPayment]['sName'].': '.
                 displayPrice( $fShippingPaymentPrice ).' '.$GLOBALS['config']['currency_symbol']
@@ -512,10 +512,10 @@ H6{max-height: 0; display:none;}
 
 <tr><td><b>".( isset( $aData['sComment'] ) ? $lang['Comment'].":</b></td>
 	<td colspan=3>".$aData['sComment'] : null )."</td></tr>
-	
 
 
-<!--Header Bestelde produkten-->	
+
+<!--Header Bestelde produkten-->
 <tr><td class='hide' colspan=4><h2>".$lang['Order_customer_products']."</h2></td></tr>
 
 <tr><td>Product</td><td>Prijs</td><td>Aantal</td><td>Totaal EUR</td></tr>
@@ -542,7 +542,7 @@ H6{max-height: 0; display:none;}
 
     // the following phrase must be present in the email's content
     //$sMailContent .= "\n\n".( LANGUAGE == 'pl' ) ? '' : '';
-	
+
 	//Content-Type: text/html; charset=ISO-8859-1\r\n"
 
     if( $config['send_customer_order_details'] === true ){
