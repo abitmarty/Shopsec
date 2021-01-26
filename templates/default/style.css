@@ -304,9 +304,10 @@ a:hover{color:#666;text-decoration:underline;}
 #orderedProducts thead td{padding-bottom:11px;color:white;background-color:var(--themeColor); text-decoration: none;}
 #orderedProducts thead em{padding:0 4px 0 0;font-style:normal;}
 #orderedProducts tbody{
-  border: 1px solid var(--themeColor);
+  /*border: 1px solid var(--themeColor);*/
+  padding-top:5px;
+  padding-bottom: 5px;
   border-radius: 10px;
-  padding: 5px;
 }
 #orderedProducts tbody th, #orderedProducts tbody td{
   /*border-top:2px solid #fff;

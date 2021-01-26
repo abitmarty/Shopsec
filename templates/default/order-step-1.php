@@ -1,4 +1,4 @@
-<?php 
+<?php
 if( !defined( 'CUSTOMER_PAGE' ) )
   exit;
 
@@ -72,37 +72,42 @@ if( isset( $aData['sName'] ) ){ // displaying pages and subpages content
       echo $sMessage;
     ?>
     <script type="text/javascript" src="<?php echo $config['dir_core']; ?>check-form.js"></script>
-    <div id="basket">
+    <div class="pure-u-1" id="basket">
       <form method="post" action="" onsubmit="return checkForm( this )">
-        <fieldset id="orderedProducts">
+        <div class="pure-u-1 boxed" id="orderedProducts">
           <legend><?php echo $aData['sName']; ?></legend>
-          <table cellspacing="0">
-            <thead>
-              <tr>
-                <td class="name">
+          <table class="flexcol" cellspacing="0">
+            <thead class="flexrow">
+              <tr class="pure-u-1">
+                <td class="pure-u-8-24 boxed name">
                   <?php echo $lang['Name']; ?>
-                </td>
-                <td class="price">
+                </td><!--
+                --><td class="pure-u-4-24 boxed price">
                   <em><?php echo $lang['Price']; ?></em><span>[<?php echo $config['currency_symbol']; ?>]</span>
-                </td>
-                <td class="quantity">
+                </td><!--
+                --><td class="pure-u-4-24 boxed quantity">
                   <?php echo $lang['Quantity']; ?>
-                </td>
-                <td class="summary">
+                </td><!--
+                --><td class="pure-u-4-24 boxed summary">
                   <em><?php echo $lang['Summary']; ?></em><span>[<?php echo $config['currency_symbol']; ?>]</span>
-                </td>
-                <td class="options">&nbsp;</td>
+                </td><!--
+                --><td class="pure-u-4-24 boxed options">&nbsp;</td>
               </tr>
-            </thead>
-            <tfoot>
-              <tr id="recount">
-                <td colspan="2">&nbsp;</td>
+            </thead >
+
+            <tbody class="flexcol ctbody pure-u-1">
+              <?php echo $sBasketList; // displaying products in basket ?>
+            </tbody>
+
+            <tfoot class="pure-u-1 flexrow">
+              <tr id="recount" class="pure-u-8-24 boxed">
+                
                 <td>
                   <input type="submit" value="<?php echo ucfirst( $lang['save'] ); ?>" class="submit" />
                 </td>
                 <td colspan="2">&nbsp;</td>
               </tr>
-              <tr class="summaryProducts">
+              <tr class="pure-u-4-24 boxed summaryProducts">
                 <th colspan="3">
                   <?php echo $lang['Summary']; ?>
                 </th>
@@ -111,21 +116,21 @@ if( isset( $aData['sName'] ) ){ // displaying pages and subpages content
                 </td>
                 <td>&nbsp;</td>
               </tr>
-              <tr class="buttons">
+              <tr class="pure-u-8-24 boxed buttons">
                 <td id="continue">
                   <input type="submit" name="sContinueShopping" value="<?php echo $lang['Continue_shopping']; ?>" class="submit" />
                 </td>
+              </tr>
+              <tr class="pure-u-4-24 boxed buttons">
                 <td colspan="4" class="nextStep">
                   <input type="submit" name="sCheckout" value="<?php echo $lang['Checkout']; ?> &raquo;" class="submit" />
                 </td>
               </tr>
             </tfoot>
-            <tbody>
-              <?php echo $sBasketList; // displaying products in basket ?>
-            </tbody>
+
           </table>
           <?php if( isset( $config['remember_basket'] ) && $config['remember_basket'] === true ) { ?><div id="save"><input type="submit" name="sRemember" value="<?php echo $lang['Remember_basket']; ?>" class="submit" /></div><?php } ?>
-        </fieldset>
+        </div>
       </form>
       <?php
       if( isset( $aData['sDescriptionFull'] ) )
