@@ -103,7 +103,7 @@ class Files
                 var sFilesDir = "'.DIR_FILES.'";
                 var sPreviewDir = "'.$GLOBALS['config']['image_preview_size'].'/";
               </script>
-              <div id="imagesList'.$iType.'" class="imagePreview"><a href="'.DIR_FILES.$aData['sFileName'].'" class="mlbox[preview]" id="previewLink" title="'.$aData['sAlt'].'"><img src="'.DIR_FILES.$GLOBALS['config']['image_preview_size'].'/'.$aData['sFileName'].'" alt="'.$aData['sAlt'].'" id="imgPreview" /></a>';
+              <div id="imagesList'.$iType.'" class="imagePreview pure-u-1"><a href="'.DIR_FILES.$aData['sFileName'].'" class="mlbox[preview]" id="previewLink" title="'.$aData['sAlt'].'"><img src="'.DIR_FILES.$GLOBALS['config']['image_preview_size'].'/'.$aData['sFileName'].'" alt="'.$aData['sAlt'].'" id="imgPreview" /></a>';
 
             if( !empty( $aData['sDescription'] ) )
               $content .= '<div id="defaultDescription">'.$aData['sDescription'].'</div>';

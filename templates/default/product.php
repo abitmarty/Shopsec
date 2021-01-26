@@ -1,11 +1,11 @@
-<?php 
+<?php
 if( !defined( 'CUSTOMER_PAGE' ) )
   exit;
 
 require_once DIR_SKIN.'_header.php'; // include design of header
 ?>
 
-<div id="product">
+<div id="product" class="pure-u-1">
 <?php
 if( isset( $aData['sName'] ) ){ // displaying product content ?>
   <script type="text/javascript">
@@ -13,10 +13,10 @@ if( isset( $aData['sName'] ) ){ // displaying product content ?>
     var fPrice = Math.abs( "<?php echo $aData['mPrice']; ?>" );
   </script><?php
 
-  echo '<h1>'.$aData['sName'].'</h1>'; // displaying product name
-
   if( isset( $aData['sPages'] ) )
     echo '<div class="breadcrumb">'.$aData['sPages'].'</div>'; // displaying pages tree (breadcrumb)
+
+  echo '<h1>'.$aData['sName'].'</h1>'; // displaying product name
 
   if( isset( $config['image_preview_size'] ) && is_numeric( $config['image_preview_size'] ) )
     echo $oFile->listPreviewImages( $aData['iProduct'], 1 ); // displaying images with type: left
@@ -48,7 +48,7 @@ if( isset( $aData['sName'] ) ){ // displaying product content ?>
   } // displaying box with price, basket and availability - END
 
   echo $oFile->listImagesByTypes( $aData['iProduct'], 2 ); // displaying images with type: right
-  
+
   if( isset( $aData['sDescriptionFull'] ) )
     echo '<div class="content" id="productDescription">'.$aData['sDescriptionFull'].'</div>'; // full description
 
