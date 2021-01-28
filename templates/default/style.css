@@ -286,7 +286,7 @@ a:hover{color:#666;text-decoration:underline;}
 #product #box #price strong{padding:0 6px;font-size:1.176em;color:var(--themeColor);font-weight:bold;}
 #product #box #available{padding:8px 2px 0;background-color:transparent;color:#666;font-weight:bold;font-size:0.9em;}
 #product #box #addBasket{padding:10px 0 5px;}
-#product #box #addBasket .submit{width:176px;padding:5px 25px 8px 5px;border:0;background:var(--themeColor);color:#fff;font-size:1.1em;font-weight:bold;text-shadow:1px 1px #630d2f;}
+#product #box #addBasket .submit{padding:5px 25px 8px 5px;border:0;background:var(--themeColor);color:#fff;font-size:1.1em;font-weight:bold;text-shadow:1px 1px #630d2f;}
 #product #box #addBasket .submit:hover{text-shadow:0px 0px 5px #e9c0d1;}
 
 #product div.content{clear:left;padding:10px 0 10px;font-size:1.083em;line-height:1.5em;}
