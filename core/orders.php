@@ -60,20 +60,20 @@ class Orders
         }
         else{
           // basket
-          $content .= '<tr class="l'.( ( $i == ( $iCount - 1 ) ) ? 'L': $i + 1 ).'">
-            <th>
+          $content .= '<tr class="pure-u-1 boxed l'.( ( $i == ( $iCount - 1 ) ) ? 'L': $i + 1 ).'">
+            <th class="pure-u-8-24 boxed">
               <a href="'.$aData['sLinkName'].'">'.$aData['sName'].'</a>
-            </th>
-            <td class="price">
+            </th><!--
+            --><td class="pure-u-4-24 boxed price">
               '.$aData['sPrice'].'
-            </td>
-            <td class="quantity">
+            </td><!--
+            --><td class="pure-u-4-24 boxed quantity">
               <label for="quantity'.$aData['iProduct'].'">'.$lang['Quantity'].'</label><input type="text" name="aProducts['.$aData['iProduct'].']" value="'.$aData['iQuantity'].'" size="3" maxlength="4" class="input" id="quantity'.$aData['iProduct'].'" alt="int" />
-            </td>
-            <td class="summary">
+            </td><!--
+            --><td class="pure-u-4-24 boxed summary">
               '.$aData['sSummary'].'
-            </td>
-            <td class="del">
+            </td><!--
+            --><td class="pure-u-4-24 boxed del">
               <a href="'.$aData['sLinkDelete'].'" title="'.$lang['Delete'].' - '.$aData['sName'].'">'.$lang['Delete'].'</a>
             </td>
           </tr>';
