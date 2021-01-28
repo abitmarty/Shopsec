@@ -69,11 +69,15 @@ function ReadOnload(){
 }
 
 function previewImage( oObj, sImage ){
-  gEBI( 'imgPreview' ).src = sFilesDir + sPreviewDir + sImage;
-  gEBI( 'imgPreview' ).alt = oObj.title;
-  gEBI( 'previewLink' ).href = sFilesDir + sImage;
-  gEBI( 'previewLink' ).title = oObj.title;
-  gEBI( 'defaultDescription' ).innerHTML = oObj.title;
+  try {
+    gEBI( 'imgPreview' ).src = sFilesDir + sPreviewDir + sImage;
+    gEBI( 'imgPreview' ).alt = oObj.title;
+    gEBI( 'previewLink' ).href = sFilesDir + sImage;
+    gEBI( 'previewLink' ).title = oObj.title;
+    gEBI( 'defaultDescription' ).innerHTML = oObj.title;
+  } catch (error) {
+    console.error(error);
+  }
 } // end function previewImage
 
 /*
@@ -144,7 +148,7 @@ function countShippingPrice( oObj ){
   gEBI( 'shippingPaymentCost' ).innerHTML = changePriceFormat( fShippingCost );
   gEBI( 'orderSummary' ).innerHTML = changePriceFormat( +fOrderSummary + fShippingCost )
 
-} // end function 
+} // end function
 
 var aUserDataNames = new Array( 'sFirstName', 'sLastName', 'sCompanyName', 'sStreet', 'sZipCode', 'sCity', 'sPhone', 'sEmail', 'sNip' );
 

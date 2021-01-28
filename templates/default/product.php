@@ -32,7 +32,7 @@ if( isset( $aData['sName'] ) ){ // displaying product content ?>
   if( isset( $aData['mPrice'] ) || isset( $aData['sAvailable'] ) ){ // displaying box with price, basket and availability - START
     echo '<div id="box" class="pure-u-1">';
       if( isset( $aData['mPrice'] ) && is_numeric( $aData['mPrice'] ) ){?>
-        <div id="price"><em><?php echo $lang['Price']; ?>:</em><strong id="priceValue"><?php echo $aData['sPrice']; ?></strong><span><?php echo $config['currency_symbol']; ?></span></div><?php
+        <div id="price"><em><?php echo $lang['Price']; ?>:</em><strong id="priceValue"><?php echo $aData['sPrice']; ?></strong><div id="product-page-tomorrow"><i class="fas fa-check-circle"></i><p>Morgen in huis</p></div><span><?php echo $config['currency_symbol']; ?></span></div><?php
       }
       elseif( !empty( $aData['mPrice'] ) ){?>
         <div id="noPrice"><?php echo $aData['sPrice']; ?></div><?php

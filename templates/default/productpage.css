@@ -20,6 +20,7 @@
   -webkit-box-shadow: none;
   box-shadow: none;
   margin: 0px;
+  padding: 8px 0px;
 }
 
 #product #box #addBasket fieldset{
@@ -30,12 +31,52 @@
   text-shadow: none;
   text-align: left;
   border: none;
-
+  padding: 0px;
 }
+
+#product #box #price em, #product #box #price span{
+  display: none;
+}
+
+#product #box #price strong{
+  padding: 0px;
+  color: #333;
+  padding-right: 0.5rem;
+}
+
+#product #box #price #product-page-tomorrow{
+  color: var(--themeColor);
+  display: inline-flex;
+}
+
+#product #box #price #product-page-tomorrow i{
+  padding-right: 0.5rem;
+}
+
+#product #box #price #product-page-tomorrow p{
+  font-size: 13px;
+  display: inline-block;
+  margin-top: 1px;
+  font-weight: bold;
+}
+
 
 #product h1 {
   margin: 14px 0px;
 }
+
+#product #imagesListPreview {
+  margin: 0;
+}
+
+#product #imagesListPreview li{
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-bottom: 3px solid transparent;
+}
+
 
 #product #product-page-stars {
   color: #ffcc00;
@@ -43,7 +84,7 @@
 
 #product #product-page-stars::after {
   content: ' 9.3/10 (33 reviews)';
-  color: black;
+  color: #333;
 }
 
 #product div.breadcrumb {
@@ -56,4 +97,9 @@
 
 #product #productDescriptionShort {
   font-weight: bold;
+  padding: 0px;
+}
+
+#product #productDescriptionShort p{
+  padding: 0px;
 }

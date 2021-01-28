@@ -110,11 +110,11 @@ class Files
             $content .= '</div>';
 
             if( $iCount > 1 )
-              $content .= '<ul class="imagesList" id="imagesListPreview">';
+              $content .= '<ul class="imagesList pure-u-1" id="imagesListPreview">';
           }
 
           if( $iCount > 1 )
-            $content .= '<li class="l'.$aData['sStyle'].'"><a href="'.DIR_FILES.$aData['sFileName'].'" onmouseover="previewImage( this, \''.$aData['sFileName'].'\' )" class="mlbox[preview]" title="'.$aData['sAlt'].'"><img src="'.DIR_FILES.$aData['iSizeValue2'].'/'.$aData['sFileName'].'" alt="'.$aData['sAlt'].'" /></a></li>';
+            $content .= '<li class="pure-u-1-3 l'.$aData['sStyle'].'"><a href="'.DIR_FILES.$aData['sFileName'].'" onmouseover="previewImage( this, \''.$aData['sFileName'].'\' )" class="mlbox[preview]" title="'.$aData['sAlt'].'"><img src="'.DIR_FILES.$aData['iSizeValue2'].'/'.$aData['sFileName'].'" alt="'.$aData['sAlt'].'" /></a></li>';
         }
       }
       if( isset( $content ) )
