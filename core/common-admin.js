@@ -316,7 +316,7 @@ function menuInit(menu) {
       }
     }
     if (textEl != null && arrowEl != null) {
-      textEl.style.paddingRight = (itemWidth 
+      textEl.style.paddingRight = (itemWidth
         - (textEl.offsetWidth + arrowEl.offsetWidth)) + "px";
       if (browser.isOP)
         arrowEl.style.marginRight = "0px";
@@ -382,16 +382,16 @@ function getPageOffsetTop(el) {
 function del( sInfo ){
   if( !sInfo )
     sInfo = '';
-  if( confirm( delShure+sInfo+' ?' ) ) 
+  if( confirm( delShure+sInfo+' ?' ) )
     return true;
-  else 
+  else
     return false
 }
 
 function sure( ){
-  if( confirm( confirmShure ) ) 
+  if( confirm( confirmShure ) )
     return true;
-  else 
+  else
     return false
 }
 
@@ -432,7 +432,7 @@ function firstNotice( ){
   var bFirstNotice = throwCookie( sCookieName );
   createCookie( sCookieName, true, 180 );
 /*  if( !bFirstNotice )
-  
+
   {
     var oClose = new LertButton(Close, function() {
       createCookie( sCookieName, true, 180 );
@@ -444,7 +444,7 @@ function firstNotice( ){
         defaultButton:oClose,
         icon:'templates/admin/img/dialog-warning.png'
       });
-	  
+
     licenseNotice.display();
     gEBI('lertWindow').setAttribute('class','lert-first-notice');
   }
@@ -458,7 +458,7 @@ function cursor( ){
     document.form.sLogin.focus( );
   }
   else{
-    document.form.sPass.focus( );        
+    document.form.sPass.focus( );
   }
 }
 
@@ -612,7 +612,7 @@ function listOptionsSearch( sPhrase, sSelectId, sClone ) {
     }
 	} // end for
   cloneClick( oClone, sSelectId );
-} 
+}
 
 function cloneClick( oObj, iIdClone ){
   var aSelected = Array();
@@ -627,7 +627,7 @@ function cloneClick( oObj, iIdClone ){
     else
       oClone.options[i].selected = false;
   } // end for
-} 
+}
 
 function changeInputStatus( oObj, sId ){
   if( oObj.checked )

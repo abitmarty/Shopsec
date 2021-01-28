@@ -255,8 +255,8 @@ $config_db['orders_ext'] = $config['dir_database'].'orders_ext.php';
 $config['language'] = LANGUAGE;
 $config['version'] = '6.6';
 
-$config['last_login'] = "1611060326";
-$config['before_last_login'] = "1611060263";
+$config['last_login'] = "1611836664";
+$config['before_last_login'] = "1611238885";
 
 $config['manual_link'] = 'http://'.( ( $config['admin_lang']=='pl' ) ? 'pl' : 'en' ).'-';
 

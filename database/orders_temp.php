@@ -1,2 +1,2 @@
 <?php exit; ?>
-a:0:{}
+a:2:{i:1611493263582;a:2:{i:33;a:3:{s:9:"iQuantity";i:3;s:6:"fPrice";s:4:"9.99";s:5:"sName";s:21:"🌹 Kleine Hangplant";}i:31;a:3:{s:9:"iQuantity";i:1;s:6:"fPrice";s:5:"14.99";s:5:"sName";s:19:"🌳 Buiten Boompje";}}i:1611662461928;a:1:{i:25;a:3:{s:9:"iQuantity";i:1;s:6:"fPrice";s:5:"19.99";s:5:"sName";s:17:"🌱 The PlantBox";}}}

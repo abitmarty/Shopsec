@@ -52,6 +52,9 @@ if( isset( $aData['sName'] ) ){ // displaying product content ?>
   if( isset( $aData['sDescriptionFull'] ) )
     echo '<div class="content" id="productDescription">'.$aData['sDescriptionFull'].'</div>'; // full description
 
+  if( isset( $aData['sDescriptionShort'] ) )
+    echo '<div class="content" id="productDescriptionShort">'.$aData['sDescriptionShort'].'</div>'; // short description
+
   echo $oFile->listFiles( $aData['iProduct'] ); // display files included to the product
 
 }
