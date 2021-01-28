@@ -100,13 +100,16 @@ if( isset( $aData['sName'] ) ){ // displaying pages and subpages content
             </tbody>
 
             <tfoot class="pure-u-1 flexrow">
-              <tr id="recount" class="pure-u-1-4 boxed">
+
+              <tr id="recount" class="pure-u-1 pure-md-2-4 boxed">
                 <td>
                   <input type="submit" value="<?php echo ucfirst( $lang['save'] ); ?>" class="submit" />
                 </td>
-                <td colspan="2">&nbsp;</td>
+                <td id="continue">
+                  <input type="submit" name="sContinueShopping" value="<?php echo $lang['Continue_shopping']; ?>" class="submit" />
+                </td>
               </tr>
-              <tr class="pure-u-1-4 boxed summaryProducts">
+              <tr class="pure-u-1 pure-md-1-4 boxed summaryProducts">
                 <th colspan="3">
                   <?php echo $lang['Summary']; ?>
                 </th>
@@ -115,12 +118,7 @@ if( isset( $aData['sName'] ) ){ // displaying pages and subpages content
                 </td>
                 <td>&nbsp;</td>
               </tr>
-              <tr class="pure-u-1-4 boxed buttons">
-                <td id="continue">
-                  <input type="submit" name="sContinueShopping" value="<?php echo $lang['Continue_shopping']; ?>" class="submit" />
-                </td>
-              </tr>
-              <tr class="pure-u-1-4 boxed buttons">
+              <tr class="pure-u-1 pure-md-1-4 boxed buttons">
                 <td colspan="4" class="nextStep">
                   <input type="submit" name="sCheckout" value="<?php echo $lang['Checkout']; ?> &raquo;" class="submit" />
                 </td>
