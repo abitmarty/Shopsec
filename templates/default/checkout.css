@@ -24,3 +24,27 @@
   margin:0;
   padding:0;
 }
+
+.betaalform1 legend{
+  color: var(--themeColor);
+}
+
+#personalDataBlock{
+  color: var(--themeColor);
+  padding-left:0px;
+}
+
+#legendtitle{
+  font-family: Poppins, sans-serif;
+  font-size: 40px;
+}
+
+#oShippingPayment{
+  border:none;
+  border-bottom: 2px solid;
+  border-color: var(--themeColor);
+}
+
+#oShippingPayment option{
+  font-family: Poppins, sans-serif;
+}
