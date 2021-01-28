@@ -45,8 +45,8 @@ if( isset( $aData['sName'] ) ){ // displaying product content ?>
           <fieldset>
             <legend><?php echo $lang['Basket_add']; ?></legend>
             <input type="hidden" name="iProductAdd" value="<?php echo $aData['iProduct']; ?>" />
-            <input class="pure-u-1-4" type="number" name="iQuantity" value="1" />
-            <button class="pure-u-3-4 submit" type="submit" value="<?php echo $lang['Basket_add']; ?>">Button</button>
+            <input class="pure-u-1-4 quantity" type="number" name="iQuantity" value="1" />
+            <button class="pure-u-3-4 submit" type="submit" value="<?php echo $lang['Basket_add']; ?>">Voeg toe</button>
           </fieldset>
         </form><?php
       }
@@ -54,6 +54,20 @@ if( isset( $aData['sName'] ) ){ // displaying product content ?>
   } // displaying box with price, basket and availability - END
 
   echo $oFile->listImagesByTypes( $aData['iProduct'], 2 ); // displaying images with type: right
+
+  echo '<ul id="usp-product" class="pure-u-1">';
+    echo '<li>Voor <strong>23:59</strong> besteld. <strong>Morgen</strong> in huis</li>';
+    echo '<li><a href="https://nl.trustpilot.com/review/plantenkoning.nl">Klanten geven PlantBox een <strong>9.5</strong></a></li>';
+    echo '<li><strong>Gratis</strong> binnen 30 dagen retourneren</li>';
+    echo '<li>Bij elke bestelling een <strong>gratis gieter</strong></li>';
+  echo '</ul>';
+
+  echo '<div id="product-attributes" class="pure-u-1">';
+    echo '<div class="pure-u-1 attribute"><p class="specification pure-u-1-2">Hoogte:</p><i class="fas fa-expand-alt pure-u-1-12"></i><p class="detail pure-u-5-12">+/- 100cm</p></div>';
+    echo '<div class="pure-u-1 attribute"><p class="specification pure-u-1-2">Pot:</p><i class="fas fa-coffee pure-u-1-12"></i><p class="detail pure-u-5-12">23cm</p></div>';
+    echo '<div class="pure-u-1 attribute"><p class="specification pure-u-1-2">Klimaat:</p><i class="fas fa-tint pure-u-1-12"></i><p class="detail pure-u-5-12">Vochtig</p></div>';
+    echo '<div class="pure-u-1 attribute"><p class="specification pure-u-1-2">Voeding:</p><i class="fas fa-clock pure-u-1-12"></i><p class="detail pure-u-5-12">Dagelijks</p></div>';
+  echo '</div>';
 
   if( isset( $aData['sDescriptionFull'] ) )
     echo '<div class="content" id="productDescription">'.$aData['sDescriptionFull'].'</div>'; // full description

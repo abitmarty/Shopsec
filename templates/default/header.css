@@ -8,6 +8,8 @@
   --headerMargin: 10px;
   --headerIconMargin: 40px;
   --overlayTranspeancy: 0.2;
+  --CTAColor: #ff4947;
+  --productContentPadding: 18px;
 }
 
 @font-face {
