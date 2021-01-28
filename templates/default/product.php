@@ -18,13 +18,19 @@ if( isset( $aData['sName'] ) ){ // displaying product content ?>
 
   echo '<h1>'.$aData['sName'].'</h1>'; // displaying product name
 
+  echo '<div id="product-page-stars" class="pure-u-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>';
+
   if( isset( $config['image_preview_size'] ) && is_numeric( $config['image_preview_size'] ) )
     echo $oFile->listPreviewImages( $aData['iProduct'], 1 ); // displaying images with type: left
   else
     echo $oFile->listImagesByTypes( $aData['iProduct'], 1 ); // displaying images with type: left
 
+
+  if( isset( $aData['sDescriptionShort'] ) )
+    echo '<div class="content" id="productDescriptionShort">'.$aData['sDescriptionShort'].'</div>'; // short description
+
   if( isset( $aData['mPrice'] ) || isset( $aData['sAvailable'] ) ){ // displaying box with price, basket and availability - START
-    echo '<div id="box">';
+    echo '<div id="box" class="pure-u-1">';
       if( isset( $aData['mPrice'] ) && is_numeric( $aData['mPrice'] ) ){?>
         <div id="price"><em><?php echo $lang['Price']; ?>:</em><strong id="priceValue"><?php echo $aData['sPrice']; ?></strong><span><?php echo $config['currency_symbol']; ?></span></div><?php
       }
@@ -51,9 +57,6 @@ if( isset( $aData['sName'] ) ){ // displaying product content ?>
 
   if( isset( $aData['sDescriptionFull'] ) )
     echo '<div class="content" id="productDescription">'.$aData['sDescriptionFull'].'</div>'; // full description
-
-  if( isset( $aData['sDescriptionShort'] ) )
-    echo '<div class="content" id="productDescriptionShort">'.$aData['sDescriptionShort'].'</div>'; // short description
 
   echo $oFile->listFiles( $aData['iProduct'] ); // display files included to the product
 
