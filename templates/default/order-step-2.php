@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 if( !defined( 'CUSTOMER_PAGE' ) )
   exit;
@@ -31,8 +31,8 @@ if( isset( $aData['sName'] ) ){ // displaying pages and subpages content
     <script type="text/javascript" src="<?php echo $config['dir_core']; ?>check-form.js"></script>
     <div id="order">
       <form action="<?php echo $oPage->aPages[$config['order_print']]['sLinkName']; ?>" method="post" onsubmit="return checkForm( this )" id="orderForm" class="form">
-        <fieldset id="personalDataBlock">
-          <legend><?php echo $lang['Your_personal_data']; ?></legend>
+        <fieldset id="personalDataBlock" class="betaalform1">
+          <legend id="legendtitle"><?php echo $lang['Your_personal_data']; ?></legend>
           <div id="personalData">
             <div id="setBasic">
               <div id="firstName">
