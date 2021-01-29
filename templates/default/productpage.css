@@ -221,14 +221,40 @@
   padding: 0px;
 }
 
+.display-desktop{
+  display: none;
+}
+
 
 @media screen and (min-width: 48em){
+  .display-mobile {
+    display: none;
+  }
+
+  .display-desktop{
+    display: inline-block;
+  }
+
   #product {
     /* display: flex;
     flex-direction: column; */
   }
 
-  #product #box{
-    width: 50%;
+  #product #product-attributes {
+    border: none;
   }
+
+  #product #usp-product {
+    border: none;
+  }
+
+  #productDescription {
+    display: inline-flex;
+    flex-direction: row;
+  }
+
+  #product #productDescription .product-discription-bottom {
+    padding: 0px;
+  }
+
 }
