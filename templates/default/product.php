@@ -30,7 +30,7 @@ if( isset( $aData['sName'] ) ){ // displaying product content ?>
   echo '</div>';
 
   echo '<div class="pure-u-md-1-2">';
-  echo '<div class="display-desktop">';
+  echo '<div class="display-desktop pure-u-1">';
   echo '<h1>'.$aData['sName'].'</h1>'; // displaying product name
 
   echo '<div id="product-page-stars" class="pure-u-1><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>';
