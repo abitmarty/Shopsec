@@ -57,7 +57,7 @@ if( isset( $aData['sName'] ) ){ // displaying product content ?>
 
   echo '<ul id="usp-product" class="pure-u-1">';
     echo '<li>Voor <strong>23:59</strong> besteld. <strong>Morgen</strong> in huis</li>';
-    echo '<li><a href="https://nl.trustpilot.com/review/plantenkoning.nl">Klanten geven PlantBox een <strong>9.5</strong></a></li>';
+    echo '<li><a target="blank" href="https://nl.trustpilot.com/review/plantenkoning.nl">Klanten geven PlantBox een <strong>9.5</strong></a></li>';
     echo '<li><strong>Gratis</strong> binnen 30 dagen retourneren</li>';
     echo '<li>Bij elke bestelling een <strong>gratis gieter</strong></li>';
   echo '</ul>';
