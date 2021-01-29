@@ -11,6 +11,8 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 #product h1{
@@ -219,4 +221,11 @@
 
 #product #productDescriptionShort p{
   padding: 0px;
+}
+
+
+@media screen and (min-width: 48em){
+  #product #box{
+    width: 50%;
+  }
 }

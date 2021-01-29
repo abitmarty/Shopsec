@@ -16,21 +16,22 @@ if( isset( $aData['sName'] ) ){ // displaying product content ?>
   if( isset( $aData['sPages'] ) )
     echo '<div class="breadcrumb">'.$aData['sPages'].'</div>'; // displaying pages tree (breadcrumb)
 
-  echo '<h1>'.$aData['sName'].'</h1>'; // displaying product name
+  echo '<h1 class="pure-u-md-1-2">'.$aData['sName'].'</h1>'; // displaying product name
 
-  echo '<div id="product-page-stars" class="pure-u-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>';
+  echo '<div id="product-page-stars" class="pure-u-1 pure-u-md-1-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>';
 
+  echo '<div class="pure-u-md-1-2">';
   if( isset( $config['image_preview_size'] ) && is_numeric( $config['image_preview_size'] ) )
     echo $oFile->listPreviewImages( $aData['iProduct'], 1 ); // displaying images with type: left
   else
     echo $oFile->listImagesByTypes( $aData['iProduct'], 1 ); // displaying images with type: left
-
+  echo '</div>';
 
   if( isset( $aData['sDescriptionShort'] ) )
-    echo '<div class="content" id="productDescriptionShort">'.$aData['sDescriptionShort'].'</div>'; // short description
+    echo '<div class="content pure-u-md-1-2" id="productDescriptionShort">'.$aData['sDescriptionShort'].'</div>'; // short description
 
   if( isset( $aData['mPrice'] ) || isset( $aData['sAvailable'] ) ){ // displaying box with price, basket and availability - START
-    echo '<div id="box" class="pure-u-1">';
+    echo '<div id="box" class="pure-u-1 pure-u-md-1-2">';
       if( isset( $aData['mPrice'] ) && is_numeric( $aData['mPrice'] ) ){?>
         <div id="price"><em><?php echo $lang['Price']; ?>:</em><strong id="priceValue"><?php echo $aData['sPrice']; ?></strong><div id="product-page-tomorrow"><i class="fas fa-check-circle"></i><p>Morgen in huis</p></div><span><?php echo $config['currency_symbol']; ?></span></div><?php
       }
@@ -55,7 +56,7 @@ if( isset( $aData['sName'] ) ){ // displaying product content ?>
 
   echo $oFile->listImagesByTypes( $aData['iProduct'], 2 ); // displaying images with type: right
 
-  echo '<ul id="usp-product" class="pure-u-1">';
+  echo '<ul id="usp-product" class="pure-u-1 pure-u-md-1-2">';
     echo '<li>Voor <strong>23:59</strong> besteld. <strong>Morgen</strong> in huis</li>';
     echo '<li><a target="blank" href="https://nl.trustpilot.com/review/plantenkoning.nl">Klanten geven PlantBox een <strong>9.5</strong></a></li>';
     echo '<li><strong>Gratis</strong> binnen 30 dagen retourneren</li>';
