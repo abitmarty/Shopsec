@@ -182,7 +182,7 @@
 #product #product-attributes {
   color: #333;
   font-size: 1.083em;
-  padding: var(--productContentPadding) 0px;
+  padding-bottom: var(--productContentPadding);
   border-bottom: 1px solid #e6e6e6;
 }
 
@@ -190,15 +190,27 @@
   color: #333;
   font-size: 1.083em;
   padding: 5px 0px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: inline-flex;
 }
 
 #product #product-attributes .specification{
   font-weight: bold;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 #product #productDescription {
   padding: var(--productContentPadding) 0px;
 }
+
+#product #productDescription .product-discription-bottom{
+  padding-top: var(--productContentPadding);
+}
+
 
 #product #productDescriptionShort {
   font-weight: bold;

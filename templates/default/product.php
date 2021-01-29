@@ -62,12 +62,12 @@ if( isset( $aData['sName'] ) ){ // displaying product content ?>
     echo '<li>Bij elke bestelling een <strong>gratis gieter</strong></li>';
   echo '</ul>';
 
-  echo '<div id="product-attributes" class="pure-u-1">';
-    echo '<div class="pure-u-1 attribute"><p class="specification pure-u-1-2">Hoogte:</p><i class="fas fa-expand-alt pure-u-1-12"></i><p class="detail pure-u-5-12">+/- 100cm</p></div>';
-    echo '<div class="pure-u-1 attribute"><p class="specification pure-u-1-2">Pot:</p><i class="fas fa-coffee pure-u-1-12"></i><p class="detail pure-u-5-12">23cm</p></div>';
-    echo '<div class="pure-u-1 attribute"><p class="specification pure-u-1-2">Klimaat:</p><i class="fas fa-tint pure-u-1-12"></i><p class="detail pure-u-5-12">Vochtig</p></div>';
-    echo '<div class="pure-u-1 attribute"><p class="specification pure-u-1-2">Voeding:</p><i class="fas fa-clock pure-u-1-12"></i><p class="detail pure-u-5-12">Dagelijks</p></div>';
-  echo '</div>';
+  //echo '<div id="product-attributes" class="pure-u-1">';
+  //  echo '<div class="pure-u-1 attribute"><p class="specification pure-u-1-2">Hoogte:</p><i class="fas fa-expand-alt pure-u-1-12"></i><p class="detail pure-u-5-12">+/- 100cm</p></div>';
+  //  echo '<div class="pure-u-1 attribute"><p class="specification pure-u-1-2">Pot:</p><i class="fas fa-coffee pure-u-1-12"></i><p class="detail pure-u-5-12">23cm</p></div>';
+  //  echo '<div class="pure-u-1 attribute"><p class="specification pure-u-1-2">Klimaat:</p><i class="fas fa-tint pure-u-1-12"></i><p class="detail pure-u-5-12">Vochtig</p></div>';
+  //  echo '<div class="pure-u-1 attribute"><p class="specification pure-u-1-2">Voeding:</p><i class="fas fa-clock pure-u-1-12"></i><p class="detail pure-u-5-12">Dagelijks</p></div>';
+  //echo '</div>';
 
   if( isset( $aData['sDescriptionFull'] ) )
     echo '<div class="content" id="productDescription">'.$aData['sDescriptionFull'].'</div>'; // full description
