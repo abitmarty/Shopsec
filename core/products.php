@@ -403,16 +403,9 @@ class Products
     if( isset( $sSortingLink ) ){
       $sLinks = null;
       foreach( $aSorts as $sLink => $sName ){
-        if( ( $sLink == 'default' && !isset( $sSort ) ) || ( isset( $sSort ) && $sSort == $sLink ) )
-          $sLinks .= '<li>'.$sName.'</li>';
-        elseif( $sLink == 'default' && isset( $sSort ) ){
-          $sLinks .= '<li><a href="'.$sSortingLink.'">'.$sName.'</a></li>';
-        }
-        else{
-          $sLinks .= '<li><a href="'.$sSortingLink.'&amp;sSort='.$sLink.'">'.$sName.'</a></li>';
-        }
+        $sLinks .= '<option value="'.$sSortingLink.'&amp;sSort='.$sLink.'">'.$sName.'</option>';
       } // end foreach
-      return '<div class="sort">'.$lang['Sort_by'].'<ul>'.$sLinks.'</ul></div>';
+      return '<div class="sort">'.$lang['Sort_by'].'<select onchange="getval(this);" id="sort-select">'.$sLinks.'</select></div>';
     }
     else{
       return $aSorts;
