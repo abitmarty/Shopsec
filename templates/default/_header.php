@@ -7,7 +7,7 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $config['language']; ?>" lang="<?php echo $config['language']; ?>">
 <head>
   <title><?php echo $sTitle.$config['title']; ?></title>
-  <link rel="icon" href="templates/admin/img/PlantBoxPlantBoxLogo.webp">
+  <link rel="icon" href="templates/admin/img/seedling_icon_head_2.png">
 
   <meta name="Language" content="<?php echo $config['language']; ?>" />
   <meta name="Description" content="<?php echo $sDescription; ?>" />
