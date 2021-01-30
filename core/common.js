@@ -70,7 +70,7 @@ function ReadOnload(){
 
 function previewImage( oObj, sImage ){
   try {
-    gEBI( 'imgPreview' ).src = sFilesDir + sPreviewDir + sImage;
+    gEBI( 'imgPreview' ).src = sFilesDir + sImage;
     gEBI( 'imgPreview' ).alt = oObj.title;
     gEBI( 'previewLink' ).href = sFilesDir + sImage;
     gEBI( 'previewLink' ).title = oObj.title;

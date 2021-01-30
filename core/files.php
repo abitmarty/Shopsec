@@ -103,7 +103,7 @@ class Files
                 var sFilesDir = "'.DIR_FILES.'";
                 var sPreviewDir = "'.$GLOBALS['config']['image_preview_size'].'/";
               </script>
-              <div id="imagesList'.$iType.'" class="imagePreview pure-u-1"><a href="'.DIR_FILES.$aData['sFileName'].'" class="mlbox[preview]" id="previewLink" title="'.$aData['sAlt'].'"><img src="'.DIR_FILES.$GLOBALS['config']['image_preview_size'].'/'.$aData['sFileName'].'" alt="'.$aData['sAlt'].'" id="imgPreview" /></a>';
+              <div id="imagesList'.$iType.'" class="imagePreview pure-u-1"><a href="'.DIR_FILES.$aData['sFileName'].'" class="mlbox[preview]" id="previewLink" title="'.$aData['sAlt'].'"><img src="'.DIR_FILES.'/'.$aData['sFileName'].'" alt="'.$aData['sAlt'].'" id="imgPreview" /></a>';
 
             if( !empty( $aData['sDescription'] ) )
               $content .= '<div id="defaultDescription">'.$aData['sDescription'].'</div>';
@@ -114,7 +114,7 @@ class Files
           }
 
           if( $iCount > 1 )
-            $content .= '<li class="pure-u-1-3 l'.$aData['sStyle'].'"><a href="'.DIR_FILES.$aData['sFileName'].'" onmouseover="previewImage( this, \''.$aData['sFileName'].'\' )" class="mlbox[preview]" title="'.$aData['sAlt'].'"><img src="'.DIR_FILES.$aData['iSizeValue2'].'/'.$aData['sFileName'].'" alt="'.$aData['sAlt'].'" /></a></li>';
+            $content .= '<li class="pure-u-1-3 l'.$aData['sStyle'].'"><a href="'.DIR_FILES.$aData['sFileName'].'" onmouseover="previewImage( this, \''.$aData['sFileName'].'\' )" class="mlbox[preview]" title="'.$aData['sAlt'].'"><img src="'.DIR_FILES.'/'.$aData['sFileName'].'" alt="'.$aData['sAlt'].'" /></a></li>';
         }
       }
       if( isset( $content ) )
@@ -135,7 +135,7 @@ class Files
       if( isset( $bLinks ) ){
         $sLink = isset( $sLink ) ? '<a href="'.$sLink.'" tabindex="-1">' : '<a href="'.DIR_FILES.$this->aImagesDefault[$iLinkType][$iLink]['sFileName'].'" class="mlbox[images]">';
       }
-      return '<div class="photo pure-u-1">'.$sLink.'<img src="'.DIR_FILES.$this->aImagesDefault[$iLinkType][$iLink]['iSizeValue1'].'/'.$this->aImagesDefault[$iLinkType][$iLink]['sFileName'].'" alt="'.( isset( $this->aImagesDefault[$iLinkType][$iLink]['sDescription'] ) ? $this->aImagesDefault[$iLinkType][$iLink]['sDescription'] : $this->aImagesDefault[$iLinkType][$iLink]['sFileName'] ).'" />'.( isset( $bLinks ) ? '</a>' : null ).'</div>';
+      return '<div class="photo pure-u-1">'.$sLink.'<img src="'.DIR_FILES.'/'.$this->aImagesDefault[$iLinkType][$iLink]['sFileName'].'" alt="'.( isset( $this->aImagesDefault[$iLinkType][$iLink]['sDescription'] ) ? $this->aImagesDefault[$iLinkType][$iLink]['sDescription'] : $this->aImagesDefault[$iLinkType][$iLink]['sFileName'] ).'" />'.( isset( $bLinks ) ? '</a>' : null ).'</div>';
     }
   } // end function getDefaultImage
 
