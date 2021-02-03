@@ -30,6 +30,7 @@
 
 #products li .basket{
   padding-left: 0;
+  display: flex;
 }
 
 #products li .basket a {
@@ -49,7 +50,6 @@
    padding-right: 3px;
    vertical-align: middle;
    font-weight: 900;
-   padding-right: 7px;
 }
 
 
