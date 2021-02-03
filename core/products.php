@@ -145,12 +145,14 @@ class Products
 
         if( is_numeric( $aData['mPrice'] ) ){
           if( isset( $sBasketPage ) ){
-            $content .= '<form action="'.$oPage->aPages[$config['basket_page']]['sLinkName'].'" method="post" id="addBasket" class="form">
+            $content .= '<div class="basket pure-u-1">
+            <form action="'.$oPage->aPages[$config['basket_page']]['sLinkName'].'" method="post" id="addBasket" class="form pure-u-1">
               <input type="hidden" name="iProductAdd" value="'.$aData['iProduct'].'" />
-              <input class="pure-u-1-4 quantity" type="number" name="iQuantity" value="1" />
-              <button class="pure-u-3-4 submit" type="submit">Voeg toe</button>
+              <input type="hidden" name="iProductPrice" value="'.$aData['mPrice'].'" />
+              <input class="pure-u-5-8 pure-u-md-3-4 quantity" type="number" name="iQuantity" value="1" />
+              <button class="pure-u-3-8 pure-u-md-1-4 submit" type="submit"></button>
             </form>
-            <div class="basket pure-u-1"><input class="pure-u-3-4 quantity" type="number" name="iQuantity" value="1"><a class="pure-u-1-4" href="'.$sBasketPage.'&amp;iProductAdd='.$aData['iProduct'].'&amp;iQuantity=1" rel="nofollow" title="'.$lang['Basket_add'].': '.$aData['sName'].'">'.'</a></div>';
+          </div>';
           }
           $content .= '<div class="price pure-u-1"><em>'.$lang['Price'].':</em><strong>'.displayPrice( $aData['mPrice'] ).'</strong><span>'. $config['currency_symbol'] .'</span></div>';
         }

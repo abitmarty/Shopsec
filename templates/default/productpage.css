@@ -42,7 +42,7 @@
   border-radius: 4px;
 }
 
-#product #box #addBasket .quantity {
+#product #box #addBasket .quantity, #products li .basket #addBasket .quantity{
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
