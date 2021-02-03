@@ -37,11 +37,12 @@ function mlbox(){
 	top='0';
 	left='0';
 	position='absolute';
-	width=DocumentWidth()+'px';
-	height=mh+'px';
+	width='100%';
+	height='100%';
 	backgroundColor='black';
 	opacity='0.7';
 	filter='alpha(opacity=70)';
+  cursor='pointer';
 	zIndex='997';}
  bd.insertBefore(mlbox_mlbg,mlbox_mlpg);
 
@@ -52,6 +53,7 @@ function mlbox(){
 	display='block';}
 
  mlbox_mlim=mlbox_mld.createElement('img');
+ mlbox_mlim.className = "pure-u-1";
  if(mlbox_chrome) mlbox_mlim.setAttribute('src',this.href+='?t='+new Date().getTime()); else mlbox_mlim.setAttribute('src',this.href);
  mlbox_mlim.onclick=mldie;
  if(mlbox_mlim.complete) mlshow(); else mlbox_mlim.onload=mlshow;
@@ -63,6 +65,7 @@ function mlshow()
  if(mlbox_elem && mlbox_mlim){
   mlbox_mlbg.onclick=mldie;
   mlbox_mlct=mlbox_mld.createElement("div");
+  mlbox_mlct.className = "pictureLayover pure-u-3-4";
   with(mlbox_mlct.style){
 	position='fixed';
 	backgroundColor='white';
@@ -71,7 +74,7 @@ function mlshow()
 	zIndex='999';
   }
   if(ms6) mlbox_mlct.style.position='absolute';
-  
+
   mlbox_mld.body.insertBefore(mlbox_mlct,mlbox_mlpg);
   mlbox_mlim.style.cursor='pointer';
   mlbox_mlct.appendChild(mlbox_mlim);
@@ -85,8 +88,8 @@ function mlshow()
 
   var mh=DocumentHeight();
   if(WindowHeight()>mh) mh=WindowHeight();
-  mlbox_mlbg.style.height=mh+'px';
-  mlbox_mlbg.style.width=WindowWidth()+'px';
+  mlbox_mlbg.style.height='100%';
+  mlbox_mlbg.style.width='100%';
 
   if(mlbox_elem.getAttribute('title') && mlbox_elem.getAttribute('title').length>0){
    var o=mlbox_mld.createElement('p');
@@ -103,7 +106,8 @@ function mlshow()
    mlbox_mlct.style.top=(tmx-Math.round(o.offsetHeight/2)+5)+'px';
   }
 
-  var s=mlbox_mld.createElement('img');
+  var s=mlbox_mld.createElement('div');
+  s.className = "productImgcloseIcon";
   with(s.style){
 	display='block';
 	position='absolute';
@@ -149,6 +153,7 @@ function mlshow()
 	if(mlbox_mlim.nodeName.toLowerCase()=='div') w=45;
    if(prev_obj!=false && prev_obj!=null){
 	var s=mlbox_mld.createElement('div');
+  s.className = "leftIconProduct productLeftAndRight";
 	with(s.style){
 	 position='absolute';
 	 top='20px';
@@ -169,6 +174,7 @@ function mlshow()
    }
    if(next_obj!=null){
 	var s=mlbox_mld.createElement('div');
+  s.className = "rightIconProduct productLeftAndRight";
 	with(s.style){
 	 position='absolute';
 	 top='20px';
@@ -204,11 +210,12 @@ function mlchg(obj){
  mlbox_mlpg.style.padding='20px';
  mlbox_mlpg.style.display='block';
  mlbox_mlim=mlbox_mld.createElement('img');
+ mlbox_mlim.className = "pure-u-1";
  if(mlbox_chrome) mlbox_mlim.setAttribute('src',obj.href+='?t='+new Date().getTime()); else mlbox_mlim.setAttribute('src',obj.href);
  mlbox_mlim.onclick=mldie;
  if(mlbox_mlim.complete) mlshow(); else mlbox_mlim.onload=mlshow;
  return!1;
-} 
+}
 
 function mldie(){
  if(mlbox_mlbg){

@@ -19,6 +19,7 @@
 
 *{
   font-family: 'Poppins';
+  text-shadow: none !important; /*Bye bye text shadows :(((((((( */
 }
 
 #body-overlay{
