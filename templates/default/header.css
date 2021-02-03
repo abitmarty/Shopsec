@@ -262,8 +262,8 @@
 }
 
 #searchForm .input::placeholder {
-  color: Black;
-  text-indent: 100px;
+  color: #383838;
+  left: 100px;
 }
 
 #search-span{
