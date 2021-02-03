@@ -33,6 +33,7 @@ function mlbox(){
  var mh=DocumentHeight();
  if(WindowHeight()>mh) mh=WindowHeight();
  mlbox_mlbg=mlbox_mld.createElement('div');
+ mlbox_mlbg.className = "productPagebackoverlay";
  with(mlbox_mlbg.style){
 	top='0';
 	left='0';
