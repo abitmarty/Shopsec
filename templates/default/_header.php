@@ -25,6 +25,10 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
   <link rel="stylesheet" href="templates/default/productpage.css"/>
   <link rel="stylesheet" href="templates/default/layover-productpage.css"/>
   <link rel="stylesheet" href="templates/default/fontawesome/css/all.css"/>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <script language="JavaScript" type="text/javascript" src="templates/default/js/jquery.js"></script>

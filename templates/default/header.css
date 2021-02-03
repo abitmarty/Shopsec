@@ -12,10 +12,12 @@
   --productContentPadding: 18px;
 }
 
+/*
 @font-face {
-    font-family: 'Poppins'; /*a name to be used later*/
-    src: url('font/poppins/Poppins-Regular.ttf'); /*URL to font*/
+    font-family: 'Poppins';
+    src: url('font/poppins/Poppins-Regular.ttf');
 }
+*/
 
 *{
   font-family: 'Poppins';
