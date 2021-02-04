@@ -134,9 +134,4 @@ else{
   $file = fopen($fileName, "w");
   fwrite($file, $var_textFortxt);
   fclose($file);
-
-
-  $headers .= 'From: ' . "plantbox@science.uu.nl" . "\r\n";
-  mail($email,"Veel plezier met uw bestelling!", $var_textFortxt, $headers);
-
 ?>
