@@ -196,9 +196,9 @@ a:hover{color:#666;text-decoration:underline;}
 #options .print a{border-left:1px solid #e0e0e0;}
 
 .message{padding:50px 0;text-align:center;}
-.message h2{background:inherit;color:#c22463;font-weight:normal;font-size:2.4em;line-height:1.7em;}
-.message h2 a{color:#2e6a97;background:inherit;}
-.message h2 a:hover{color:#666;background:inherit;}
+.message h2{background:inherit;color:var(--themeColor);font-weight:normal;font-size:2.4em;line-height:1.7em;}
+.message h2 a{color:#2e6a97;background:inherit;text-decoration: none;}
+.message h2 a:hover{color:#666;background:inherit;text-decoration: none;}
 
 /* PRODUCTS LIST */
 #products{clear:both;float:left;width:100%;margin:10px 0;list-style:none;}
@@ -333,17 +333,17 @@ a:hover{color:#666;text-decoration:underline;}
 
 #basket #orderedProducts table{margin:10px 0 0;}
 #basket .info{padding:10px 0;text-align:left;}
-#basket #recount{background:#fff;border-bottom:2px solid #e0e0e0;}
+#basket #recount{background:#fff;border-bottom:2px solid #e0e0e0; p }
 #basket #recount td{border-bottom:1px solid #e0e0e0;text-align:right;}
-#basket #recount .submit{padding:5px 5px; font-family: Poppins, sans-serif; background-color: var(--themeColor);}
+#basket #recount .submit{padding:5px 5px; font-family: Poppins, sans-serif; background-color: var(--themeColor); width:auto;}
 #basket #recount .submit:hover, #basket .buttons #continue .submit:hover{background: var(--themeColor);}
 #basket .summaryProducts{background: none; font-family: Poppins, sans-serif; color: var(--themeColor); font-size:1.36em;font-weight:bold;}
 #basket .summaryProducts #summary{font-weight:bold;}
 #basket .del{padding:0 5px 0 10px;}
 #basket .del a{text-decoration:none;background:inherit;color:#666;}
 #basket .del a:hover{background:inherit;color:var(--themeColor);}
-#basket .buttons #continue{ text-align:left; text-decoration: none;}
-#basket .buttons #continue .submit{ font-family: Poppins, sans-serif;background-color: var(--themeColor);margin-right:5px;padding:3px 5px;}
+#basket .buttons #continue{ text-align:left; text-decoration: none; padding: 0px;summaryProducts}
+#basket .buttons #continue .submit{ font-family: Poppins, sans-serif;background-color: var(--themeColor);margin-right:5px;padding:3px 5px; padding-left: 0px;padding-right: 0px;}
 #basket #pageDescription{margin-top:10px;}
 #basket legend{display:none; }
 
@@ -357,12 +357,13 @@ a:hover{color:#666;text-decoration:underline;}
   font-family: Poppins, sans-serif;
   overflow:hidden;
 }
-#order #personalData #setBasic, #order #personalData #setExtend{float:left;width:50%;}
+#order #personalData #setBasic, #order #personalData #setExtend{float:left;width:100%; display: flex;flex-direction: column;}
 #order #personalData label{display:block;padding:2px 0;color: var(--themeColor);font-family: Poppins, sans-serif;}
 #order #personalData .input, #order #personalData #oComment{width:90%;margin:0 0 5px;border:none;border-bottom: 2px solid;border-color: var(--themeColor);}
 #order #personalData #oComment{height:125px;}
 
-#shippingAndPayments div{padding:11px 3%; font-family: Poppins, sans-serif; font-size: 16px; color:var(--themeColor);}
+#shippingAndPayments div{ font-family: Poppins, sans-serif; font-size: 16px; color:var(--themeColor); width:90%;}
+
 #shippingAndPayments legend label{font-family: Poppins, sans-serif;  color:var(--themeColor);}
 #order tfoot td, #orderPrint tfoot td{color:var(--themeColor); font-family: Poppins, sans-serif;}
 #order .summaryProducts, #order .summaryShippingPayment, #orderPrint .summaryShippingPayment{font-size:1.182em;}

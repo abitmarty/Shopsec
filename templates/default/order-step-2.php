@@ -31,10 +31,10 @@ if( isset( $aData['sName'] ) ){ // displaying pages and subpages content
     <script type="text/javascript" src="<?php echo $config['dir_core']; ?>check-form.js"></script>
     <div id="order">
       <form action="<?php echo $oPage->aPages[$config['order_print']]['sLinkName']; ?>" method="post" onsubmit="return checkForm( this )" id="orderForm" class="form">
-        <fieldset id="personalDataBlock" class="betaalform1">
+        <fieldset id="personalDataBlock" class="betaalform1 pure-u-1 boxed">
           <legend id="legendtitle"><?php echo $lang['Your_personal_data']; ?></legend>
-          <div id="personalData">
-            <div id="setBasic">
+          <div id="personalData" class="pure-u-1 boxed">
+            <div id="setBasic" class="pure-u-1 pure-md-1-2 boxed">
               <div id="firstName">
                 <label for="oFirstName"><?php echo $lang['First_name']; ?><span>(<?php echo $lang['required']; ?>)</span></label>
                 <input type="text" name="sFirstName" value="qwe" maxlength="30" class="input" onblur="saveUserData( this.name, this.value )" id="oFirstName" alt="simple" />
@@ -60,7 +60,7 @@ if( isset( $aData['sName'] ) ){ // displaying pages and subpages content
                 <input type="text" name="sCity" value="qwe" maxlength="40" class="input" onblur="saveUserData( this.name, this.value )" id="oCity" alt="simple" />
               </div>
             </div>
-            <div id="setExtend">
+            <div id="setExtend" class="pure-u-1 pure-md-1-2">
               <div id="phone">
                 <label for="oPhone"><?php echo $lang['Telephone']; ?><span>(<?php echo $lang['required']; ?>)</span></label>
                 <input type="text" name="sPhone" value="123" maxlength="40" class="input" onblur="saveUserData( this.name, this.value )" id="oPhone" alt="simple" />
@@ -77,10 +77,10 @@ if( isset( $aData['sName'] ) ){ // displaying pages and subpages content
           </div>
         </fieldset>
         <?php if( isset( $sShippingPaymentSelect ) ){ ?>
-          <fieldset id="shippingAndPayments">
+          <fieldset id="shippingAndPayments" class="pure-u-1 boxed">
             <legend><label for="oShippingPayment"><?php echo $lang['Shipping_and_payment']; ?></label></legend>
-            <div>
-              <select name="sShippingPayment" title="simple;<?php echo $lang['Select_shipping_and_payment']; ?>" onchange="countShippingPrice( this )" id="oShippingPayment">
+            <div class="pure-u-1 boxed">
+              <select class="pure-u-1 boxed" name="sShippingPayment" title="simple;<?php echo $lang['Select_shipping_and_payment']; ?>" onchange="countShippingPrice( this )" id="oShippingPayment">
                 <option value=""><?php echo $lang['Select']; ?></option>
                 <?php echo $sShippingPaymentSelect; ?>
               </select>
