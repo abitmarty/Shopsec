@@ -54,7 +54,8 @@ if( isset( $aData['sName'] ) ){ // displaying product content ?>
           <fieldset>
             <legend><?php echo $lang['Basket_add']; ?></legend>
             <input type="hidden" name="iProductAdd" value="<?php echo $aData['iProduct']; ?>" />
-            <input class="pure-u-1-4 quantity" type="number" name="iQuantity" value="1" />
+            <input id="category-price-<?php echo $aData['iProduct']; ?>" type="hidden" name="iProductPrice" value="<?php echo $aData['mPrice']; ?>" />
+            <input id="<?php echo $aData['iProduct']; ?>" class="pure-u-1-4 quantity" type="number" name="iQuantity" value="1" />
             <button class="pure-u-3-4 submit" type="submit" value="<?php echo $lang['Basket_add']; ?>">Voeg toe</button>
           </fieldset>
         </form><?php
