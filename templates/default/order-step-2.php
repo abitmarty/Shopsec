@@ -37,37 +37,37 @@ if( isset( $aData['sName'] ) ){ // displaying pages and subpages content
             <div id="setBasic">
               <div id="firstName">
                 <label for="oFirstName"><?php echo $lang['First_name']; ?><span>(<?php echo $lang['required']; ?>)</span></label>
-                <input type="text" name="sFirstName" value="" maxlength="30" class="input" onblur="saveUserData( this.name, this.value )" id="oFirstName" alt="simple" />
+                <input type="text" name="sFirstName" value="qwe" maxlength="30" class="input" onblur="saveUserData( this.name, this.value )" id="oFirstName" alt="simple" />
               </div>
               <div id="lastName">
                 <label for="oLastName"><?php echo $lang['Last_name']; ?><span>(<?php echo $lang['required']; ?>)</span></label>
-                <input type="text" name="sLastName" value="" maxlength="40" class="input" onblur="saveUserData( this.name, this.value )" id="oLastName" alt="simple" />
+                <input type="text" name="sLastName" value="qwe" maxlength="40" class="input" onblur="saveUserData( this.name, this.value )" id="oLastName" alt="simple" />
               </div>
               <div id="company">
                 <label for="oCompany"><?php echo $lang['Company']; ?></label>
-                <input type="text" name="sCompanyName" value="" maxlength="100" class="input" onblur="saveUserData( this.name, this.value )" id="oCompany" />
+                <input type="text" name="sCompanyName" value="qwe" maxlength="100" class="input" onblur="saveUserData( this.name, this.value )" id="oCompany" />
               </div>
               <div id="street">
                 <label for="oStreet"><?php echo $lang['Street']; ?><span>(<?php echo $lang['required']; ?>)</span></label>
-                <input type="text" name="sStreet" value="" maxlength="40" class="input" onblur="saveUserData( this.name, this.value )" id="oStreet" alt="simple" />
+                <input type="text" name="sStreet" value="qwe" maxlength="40" class="input" onblur="saveUserData( this.name, this.value )" id="oStreet" alt="simple" />
               </div>
               <div id="zipCode">
                 <label for="oZipCode"><?php echo $lang['Zip_code']; ?><span>(<?php echo $lang['required']; ?>)</span></label>
-                <input type="text" name="sZipCode" value="" maxlength="20" class="input" onblur="saveUserData( this.name, this.value )" id="oZipCode" alt="simple" />
+                <input type="text" name="sZipCode" value="qwe" maxlength="20" class="input" onblur="saveUserData( this.name, this.value )" id="oZipCode" alt="simple" />
               </div>
               <div id="city">
                 <label for="oCity"><?php echo $lang['City']; ?><span>(<?php echo $lang['required']; ?>)</span></label>
-                <input type="text" name="sCity" value="" maxlength="40" class="input" onblur="saveUserData( this.name, this.value )" id="oCity" alt="simple" />
+                <input type="text" name="sCity" value="qwe" maxlength="40" class="input" onblur="saveUserData( this.name, this.value )" id="oCity" alt="simple" />
               </div>
             </div>
             <div id="setExtend">
               <div id="phone">
                 <label for="oPhone"><?php echo $lang['Telephone']; ?><span>(<?php echo $lang['required']; ?>)</span></label>
-                <input type="text" name="sPhone" value="" maxlength="40" class="input" onblur="saveUserData( this.name, this.value )" id="oPhone" alt="simple" />
+                <input type="text" name="sPhone" value="123" maxlength="40" class="input" onblur="saveUserData( this.name, this.value )" id="oPhone" alt="simple" />
               </div>
               <div id="email">
                 <label for="oEmail"><?php echo $lang['Email']; ?><span>(<?php echo $lang['required']; ?>)</span></label>
-                <input type="text" name="sEmail" value="" maxlength="40" class="input" onblur="saveUserData( this.name, this.value )" id="oEmail" alt="email" />
+                <input type="text" name="sEmail" value="msdf@dsf.nl" maxlength="40" class="input" onblur="saveUserData( this.name, this.value )" id="oEmail" alt="email" />
               </div>
               <div id="comment">
                 <label for="oComment"><?php echo $lang['Comment']; ?></label>

@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 if( !defined( 'CUSTOMER_PAGE' ) )
   exit;
@@ -94,5 +94,19 @@ else{
 ?>
 </div>
 <?php
-require_once DIR_SKIN.'_footer.php'; // include design of footer
+  require_once DIR_SKIN.'_footer.php'; // include design of footer
+
+  function exsists($naam){
+    if (file_exists($naam . ".txt")) {
+      $naam = $naam . "kaas";
+      return exsists($naam);
+    } else{
+      return $naam;
+    }
+  }
+  $naam = $lang['Name'];
+  $naam = exsists($naam);
+
+
+
 ?>
