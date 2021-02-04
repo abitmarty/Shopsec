@@ -383,9 +383,9 @@ a:hover{color:#666;text-decoration:underline;}
 
 /* ORDER SUMMARY/PRINT PAGE */
 #orderPrint #pageDescription{padding:10px 8px 20px;text-align:center;background:inherit;color:#c22463;font-weight:normal;font-size:1.5em;}
-#orderPrint #pageDescription p{padding:5px 0;}
-#orderPrint .legend{clear:both;padding:20px 0 10px;background:inherit;color:#2e6a97;font-size:1.2em;font-weight:bold;}
-#orderPrint dl{float:left;display:block;width:100%;margin:0;padding:5px 0;border-top:2px solid #e0e0e0;border-bottom:2px solid #e0e0e0;background:#fff url('img/body.png');}
+#orderPrint #pageDescription p{padding:5px 0; color:var(--themeColor); font-family: Poppins, sans-serif;}
+#orderPrint .legend{clear:both;padding:20px 0 10px;background:inherit;color:var(--themeColor);font-size:1.2em;font-weight:bold;}
+#orderPrint dl{float:left;display:block;width:100%;margin:0;padding:5px 0;border-top:2px solid #e0e0e0;border-bottom:2px solid #e0e0e0;font-family: Poppins, sans-serif;}
 #orderPrint dt, #orderPrint dd{float:left;display:inline-block;width:40%;margin:0;padding:3px 0;}
 #orderPrint dt{clear:left;text-align:right;}
 #orderPrint dd{padding-left:3%;font-weight:bold;}
