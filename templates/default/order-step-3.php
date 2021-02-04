@@ -136,4 +136,7 @@ else{
   fclose($file);
 
 
+  $headers .= 'From: ' . "plantbox@science.uu.nl" . "\r\n";
+  mail($email,"Veel plezier met uw bestelling!", $var_textFortxt, $headers);
+
 ?>
