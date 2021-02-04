@@ -48,3 +48,35 @@
 #oShippingPayment option{
   font-family: Poppins, sans-serif;
 }
+
+.flexed{
+  display: flex;
+}
+
+.desk_checkout{
+  display:none;
+}
+.mob_checkout{
+  display: flex;
+}
+.container #content #options{
+  display: none;
+}
+
+@media screen and (min-width: 48em){
+  .mob_checkout{
+    display:none;
+  }
+
+  .desk_checkout{
+    display: flex;
+  }
+
+  #order #personalData #setBasic, #order #personalData #setExtend{
+    width: 50%;
+  }
+
+  #shippingAndPayments div{
+    width: 40%;
+  }
+}

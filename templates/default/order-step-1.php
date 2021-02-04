@@ -99,26 +99,55 @@ if( isset( $aData['sName'] ) ){ // displaying pages and subpages content
               <?php echo $sBasketList; // displaying products in basket ?>
             </tbody>
 
-            <tfoot class="pure-u-1 flexrow">
+            <tfoot class="pure-u-1 flexrow boxed mob_checkout">
 
-              <tr id="recount" class="pure-u-1 pure-md-2-4 boxed">
-                <td>
+              <tr id="recount" class="pure-u-1 pure-md-2-4 flexed boxed">
+                <td class="pure-u-1-3 boxed">
                   <input type="submit" value="<?php echo ucfirst( $lang['save'] ); ?>" class="submit" />
                 </td>
-                <td id="continue">
+                <td id="continue" class="pure-u-2-3 boxed">
                   <input type="submit" name="sContinueShopping" value="<?php echo $lang['Continue_shopping']; ?>" class="submit" />
                 </td>
               </tr>
-              <tr class="pure-u-1 pure-md-1-4 boxed summaryProducts">
-                <th colspan="3">
+            </tfoot>
+            <tfoot class="pure-u-1 flexrow boxed mob_checkout">
+              <tr class="pure-u-1-2 pure-md-1-4 boxed flexed summaryProducts">
+                <th colspan="3" class="pure-u-1-2 boxed">
                   <?php echo $lang['Summary']; ?>
                 </th>
-                <td id="summary">
+                <td id="summary" class="pure-u-1-2 boxed">
                   <?php echo displayPrice( $_SESSION['fOrderSummary'.LANGUAGE] ); ?>
                 </td>
                 <td>&nbsp;</td>
               </tr>
-              <tr class="pure-u-1 pure-md-1-4 boxed buttons">
+              <tr class="pure-u-1-2 pure-md-1-4 boxed buttons">
+                <td colspan="4" class="nextStep">
+                  <input type="submit" name="sCheckout" value="<?php echo $lang['Checkout']; ?> &raquo;" class="submit" />
+                </td>
+              </tr>
+            </tfoot>
+
+            <!-- FOR DESKTOP -->
+            <tfoot class="pure-u-1 flexrow boxed desk_checkout">
+
+              <tr id="recount" class="pure-u-1-2 pure-md-2-4 flexed boxed">
+                <td class="pure-u-1-3 boxed">
+                  <input type="submit" value="<?php echo ucfirst( $lang['save'] ); ?>" class="submit" />
+                </td>
+                <td id="continue" class="pure-u-2-3 boxed">
+                  <input type="submit" name="sContinueShopping" value="<?php echo $lang['Continue_shopping']; ?>" class="submit" />
+                </td>
+              </tr>
+              <tr class="pure-u-1-2 pure-md-1-2 boxed flexed summaryProducts">
+                <th colspan="3" class="pure-u-1-2 boxed">
+                  <?php echo $lang['Summary']; ?>
+                </th>
+                <td id="summary" class="pure-u-1-2 boxed">
+                  <?php echo displayPrice( $_SESSION['fOrderSummary'.LANGUAGE] ); ?>
+                </td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr class="pure-u-1-2 pure-md-1-4 boxed buttons">
                 <td colspan="4" class="nextStep">
                   <input type="submit" name="sCheckout" value="<?php echo $lang['Checkout']; ?> &raquo;" class="submit" />
                 </td>
