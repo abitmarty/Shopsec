@@ -16,12 +16,12 @@ if( !defined( 'CUSTOMER_PAGE' ) )
 
 
     --><div class="pure-u-1-2 pure-u-md-1-3 inline"><!--
-      --><div class="footer_row2"><a class="footer_link" href="">Algemene voorwaarden</a></div><!--
+      --><div class="footer_row2"><a class="footer_link" href="/?%F0%9F%A7%BE-algemene-voorwaarden,31&sLang=en">Algemene voorwaarden</a></div><!--
       --><div class="footer_row2"><a class="footer_link" href="">Privacy</a></div><!--
       --><div class="footer_row2"><a class="footer_link" href="">Cookies</a></div></div><!--
       --><div class="pure-u-1-2 pure-u-lg-1-3 inline"><!--
       --><div class="footer_row2"><strong>Klantenservice</strong></div><!--
-      --><div class="footer_row2"><strong>E-mail:</strong> plantbox@info.nl</div><!--
+      --><div class="footer_row2"><strong>E-mail:</strong> info@plantbox.com</div><!--
       --><div class="footer_row2"><strong>tel:</strong> +31 (0)295-080754</div><!--
     -->  </div><!--
 
