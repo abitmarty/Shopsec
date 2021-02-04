@@ -149,7 +149,7 @@ class Products
             <form action="'.$oPage->aPages[$config['basket_page']]['sLinkName'].'" method="post" id="addBasket" class="form pure-u-1">
               <input type="hidden" name="iProductAdd" value="'.$aData['iProduct'].'" />
               <input id="category-price-'.$aData['iProduct'].'" type="hidden" name="iProductPrice" value="'.$aData['mPrice'].'" />
-              <input max="100" id="'.$aData['iProduct'].'" class="pure-u-5-8 pure-u-md-3-4 quantity" type="number" name="iQuantity" value="1" />
+              <input min="1" max="100" id="'.$aData['iProduct'].'" class="pure-u-5-8 pure-u-md-3-4 quantity" type="number" name="iQuantity" value="1" />
               <button class="pure-u-3-8 pure-u-md-1-4 submit" type="submit"></button>
             </form>
           </div>';
