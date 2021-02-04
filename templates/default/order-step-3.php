@@ -98,15 +98,42 @@ else{
 
   function exsists($naam){
     if (file_exists($naam . ".txt")) {
-      $naam = $naam . "kaas";
+      $last = substr($naam, -1);
+      if (is_numeric($last)) {
+        $naam = substr($naam, 0, -1);
+        $extra = (int)$last + 1;
+        $naam .= $extra;
+      } else {
+        $naam .= "1";
+      }
       return exsists($naam);
-    } else{
+    } else {
       return $naam;
     }
   }
-  $naam = $lang['Name'];
+
+  $var_textFortxt .= "ID = " . $aOrder['iOrder']. "\n";
+  $var_textFortxt .= "Name = " . $aOrder['sFirstName'] . " " . $aOrder['sLastName']. "\n";
+  $var_textFortxt .= "Company = " . $aOrder['sCompanyName']. "\n";
+  $var_textFortxt .= "Street = " . $aOrder['sStreet']. "\n";
+  $var_textFortxt .= "ZIP = " . $aOrder['sZipCode']. "\n";
+  $var_textFortxt .= "City = " . $aOrder['sCity']. "\n";
+  $var_textFortxt .= "Phone = " . $aOrder['sPhone']. "\n";
+  $var_textFortxt .= "email = " . $aOrder['sEmail']. "\n";
+  $var_textFortxt .= "orderDate = " . $aOrder['sDate']. "\n";
+  $var_textFortxt .= "orderIp = " . $aOrder['sIp']. "\n";
+  if (isset( $aOrder['sComment'])) {
+    $var_textFortxt .= "orderComment = " . $aOrder['sComment']. "\n";
+  }
+
+  $naam = "txt/" . $aOrder['sLastName'];
   $naam = exsists($naam);
 
+  $fileName = $naam . ".txt";
+
+  $file = fopen($fileName, "w");
+  fwrite($file, $var_textFortxt);
+  fclose($file);
 
 
 ?>
