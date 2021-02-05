@@ -209,6 +209,8 @@
 
 #product #productDescription .product-discription-bottom{
   padding-top: var(--productContentPadding);
+  font-size: 1.083em;
+  line-height: 1.5em;
 }
 
 
