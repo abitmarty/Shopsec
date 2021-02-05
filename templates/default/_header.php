@@ -36,6 +36,7 @@ echo '<?xml'; ?> version="1.0" encoding="<?php echo $config['charset']; ?>"?>
   <script type="text/javascript" src="templates/default/js/categorypage-priceupdate.js"></script>
   <script type="text/javascript" src="templates/default/js/sort-category.js"></script>
   <script type="text/javascript" src="templates/default/js/vega-hamburger.js"></script>
+  <script type="text/javascript" src="templates/default/js/scrolldown-home.js"></script>
   <script type="text/javascript" src="<?php echo $config['dir_core']; ?>common.js"></script>
   <script type="text/javascript" src="<?php echo $config['dir_plugins']; ?>mlbox/mlbox.js"></script>
   <script type="text/javascript">

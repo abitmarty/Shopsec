@@ -28,6 +28,10 @@
   border: none;
 }
 
+#products {
+  margin-top: 0px;
+}
+
 #products li .basket{
   padding-left: 0;
   display: flex;
@@ -97,6 +101,7 @@
 
 #content .subpagesList{
   height: var(--categorySlider);
+  margin: 0px 0px 20px 0px;
 }
 
 #content .subpagesList li h2 a{
@@ -136,6 +141,15 @@
   padding: 0;
 }
 
+#products .sort {
+  padding: 0px;
+}
+
 #sort-select {
   margin-left: 5px;
+}
+
+#page div.content p {
+  padding: 0px;
+  margin-bottom: 10px;
 }

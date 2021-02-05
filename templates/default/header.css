@@ -24,6 +24,10 @@
   text-shadow: none !important; /*Bye bye text shadows :(((((((( */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #body-overlay{
 
 }
