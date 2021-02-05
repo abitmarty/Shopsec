@@ -16,9 +16,9 @@ if( !defined( 'CUSTOMER_PAGE' ) )
 
 
     --><div class="pure-u-1-2 pure-u-md-1-3 inline"><!--
-      --><div class="footer_row2"><a class="footer_link" href="/~1235002/shopsec/?🧾-algemene-voorwaarden,31&sLang=en">Algemene voorwaarden</a></div><!--
-      --><div class="footer_row2"><a class="footer_link" href="/~1235002/shopsec/?🍪cookies-%F0%9F%94%92privacy,32&sLang=en">Privacy</a></div><!--
-      --><div class="footer_row2"><a class="footer_link" href="/~1235002/shopsec/?🍪cookies-%F0%9F%94%92privacy,32&sLang=en">Cookies</a></div></div><!--
+      --><div class="footer_row2"><a class="footer_link" href="/~1235002/shopsec/?🧾-algemene-voorwaarden,32&sLang=en">Algemene voorwaarden</a></div><!--
+      --><div class="footer_row2"><a class="footer_link" href="/~1235002/shopsec/?🍪cookies-%F0%9F%94%92privacy,31&sLang=en">Privacy</a></div><!--
+      --><div class="footer_row2"><a class="footer_link" href="/~1235002/shopsec/?🍪cookies-%F0%9F%94%92privacy,31&sLang=en">Cookies</a></div></div><!--
       --><div class="pure-u-1-2 pure-u-lg-1-3 inline"><!--
       --><div class="footer_row2"><strong>Klantenservice</strong></div><!--
       --><div class="footer_row2"><strong>E-mail:</strong> info@plantbox.com</div><!--
