@@ -348,7 +348,7 @@ html {
   }
 
   .header-icons #shop-favourite{
-    display: inline-block;
+    display: none;
   }
 
   .header-icons #shop-rating:after {
@@ -422,7 +422,7 @@ html {
 
 @media screen and (min-width: 48em){
   #searchForm fieldset {
-    padding-right: calc(var(--headerIconMargin) + 20px);
+    padding-right: 40px;
   }
 }
 
