@@ -424,6 +424,9 @@ html {
   #searchForm fieldset {
     padding-right: 40px;
   }
+  #page h1{
+    margin:0px 0 10px
+  }
 }
 
 @media screen and (min-width: 64em){

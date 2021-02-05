@@ -205,6 +205,7 @@
 
 #product #productDescription {
   padding: var(--productContentPadding) 0px;
+  padding-bottom: 0px;
 }
 
 #product #productDescription .product-discription-bottom{
