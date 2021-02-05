@@ -317,6 +317,7 @@
   #productDescription {
     display: inline-flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   #product #productDescription .product-discription-bottom {
