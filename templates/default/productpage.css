@@ -251,6 +251,7 @@
 #productpage-reviews .review-content {
   padding-bottom: 10px;
   border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 15px;
 }
 
 #productpage-reviews .review-content .reviewstar {
@@ -328,7 +329,6 @@
 
   #productpage-reviews .review-content {
     display: flex;
-    margin-bottom: 15px;
   }
 
   #productpage-reviews .review-content .header {
