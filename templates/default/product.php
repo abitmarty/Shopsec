@@ -85,6 +85,23 @@ if( isset( $aData['sName'] ) ){ // displaying product content ?>
 
   echo $oFile->listFiles( $aData['iProduct'] ); // display files included to the product
 
+  echo '<div id="productpage-reviews" class="pure-u-1">';
+    echo '<div class="review-header pure-u-1">';
+      echo '<p id="title" class="pure-u-1">Beoordelingen</p>';
+      echo '<div id="star" class="pure-u-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 3 reviews</div>';
+    echo '</div>';
+    echo '<div class="review-content pure-u-1">';
+      echo '<div class="header pure-u-1 pure-u-md-2-5">';
+        echo '<div class="reviewstar pure-u-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>';
+        echo '<p class="review-date pure-u-1">Door Maarten G op 04-02-2021</p>';
+      echo '</div>';
+      echo '<div class="content pure-u-1">';
+        echo '<p class="review-title pure-u-1">Geweldig</p>';
+        echo '<p class="review-text pure-u-1">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lore </p>';
+      echo '</div>';
+    echo '</div>';
+  echo '</div>';
+
 }
 else{
   echo '<div class="message" id="error"><h2>'.$lang['Data_not_found'].'</h2></div>'; // displaying 404 error
