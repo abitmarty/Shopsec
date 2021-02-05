@@ -326,10 +326,10 @@
 
   #productpage-reviews .review-content {
     display: flex;
+    margin-bottom: 15px;
   }
 
   #productpage-reviews .review-content .header {
-    width: auto;
     margin-right: 40px;
   }
 }
