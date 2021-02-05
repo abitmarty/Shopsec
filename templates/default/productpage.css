@@ -196,6 +196,10 @@
   display: inline-flex;
 }
 
+#product #product-attributes .attribute .fas{
+  text-align: center;
+}
+
 #product #product-attributes .specification{
   font-weight: bold;
   box-sizing: border-box;
